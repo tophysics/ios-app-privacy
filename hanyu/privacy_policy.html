@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Hanyu — Privacy Policy</title>
+<style>
+:root{--ink:#2D2D2D;--red:#E63946;--sec:#666;--bg:#FAFAF8;--card:#FFF;--bdr:#E0E0E0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;padding:20px}
+.ctn{max-width:720px;margin:0 auto}
+.hd{text-align:center;padding:40px 20px 30px;border-bottom:2px solid var(--red);margin-bottom:30px}
+.hd h1{font-size:32px;color:var(--red);margin-bottom:4px}
+.hd .sub{font-size:18px;color:var(--sec)}
+.hd .app{font-size:14px;color:var(--sec);margin-top:8px}
+.sec{background:var(--card);border:1px solid var(--bdr);border-radius:12px;padding:24px;margin-bottom:20px}
+.sec h2{font-size:20px;color:var(--red);margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--bdr)}
+.sec p,.sec li{font-size:15px;margin-bottom:10px}
+.sec ul{padding-left:20px;margin-bottom:10px}
+.sec li{margin-bottom:6px}
+.hl{background:#FFF3E0;border-left:3px solid var(--red);padding:12px 16px;margin:12px 0;font-size:14px}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.tbl th,.tbl td{border:1px solid var(--bdr);padding:10px 14px;text-align:left}
+.tbl th{background:#F5F5F5;font-weight:600}
+.bg{display:inline-block;padding:3px 10px;border-radius:12px;font-size:12px;font-weight:600}
+.bg-g{background:#E8F5E9;color:#2E7D32}.bg-r{background:#FFEBEE;color:#C62828}.bg-b{background:#E3F2FD;color:#1565C0}
+.ft{text-align:center;padding:30px 20px;font-size:13px;color:var(--sec);border-top:1px solid var(--bdr);margin-top:30px}
+.lsel{text-align:center;margin-bottom:20px;flex-wrap:wrap;display:flex;justify-content:center;gap:4px}
+.lsel a{display:inline-block;padding:6px 14px;border-radius:16px;font-size:13px;font-weight:600;text-decoration:none;color:var(--red);border:1px solid var(--red);cursor:pointer}
+.lsel a:hover,.lsel a.act{background:var(--red);color:white}
+</style>
+</head>
+<body>
+<div class="ctn">
+
+<div class="lsel" id="langBtns">
+<a class="act" onclick="sw('en')">English</a>
+<a onclick="sw('zh')">中文</a>
+<a onclick="sw('es')">Español</a>
+<a onclick="sw('fr')">Français</a>
+<a onclick="sw('ar')">العربية</a>
+<a onclick="sw('pt')">Português</a>
+<a onclick="sw('de')">Deutsch</a>
+<a onclick="sw('ja')">日本語</a>
+<a onclick="sw('ko')">한국어</a>
+<a onclick="sw('ru')">Русский</a>
+<a onclick="sw('hi')">हिन्दी</a>
+<a onclick="sw('th')">ไทย</a>
+<a onclick="sw('vi')">Tiếng Việt</a>
+<a onclick="sw('it')">Italiano</a>
+</div>
+
+<div id="L-en">
+<div class="hd"><h1>Privacy Policy</h1><div class="sub">Hanyu — Chinese Learning App</div><div class="app">Bundle ID: com.hongyue.use-hanyu-1.hanyu<br>Effective Date: May 27, 2026</div></div>
+<div class="sec"><h2>1. Overview</h2><p>Hanyu is an offline-first Chinese learning app. We believe your learning data belongs to you alone. This app does not collect, transmit, or share any personal data with third parties.</p><div class="hl"><strong>Core Principle:</strong> All your learning progress, settings, and activity data stay on your device. Zero third-party SDKs, zero analytics, zero trackers, zero ads.</div></div>
+<div class="sec"><h2>2. Data We Collect</h2><p><span class="bg bg-g">Minimal</span> Only data necessary for learning features, all stored on your device:</p>
+<table class="tbl"><thead><tr><th>Data Type</th><th>Purpose</th><th>Storage</th><th>Shared?</th></tr></thead><tbody>
+<tr><td>Learning progress</td><td>Spaced repetition & tracking</td><td>Local SwiftData</td><td><span class="bg bg-g">No</span></td></tr>
+<tr><td>User preferences</td><td>App customization</td><td>Local SwiftData</td><td><span class="bg bg-g">No</span></td></tr>
+<tr><td>Mistake records</td><td>Mistake review feature</td><td>Local SwiftData</td><td><span class="bg bg-g">No</span></td></tr>
+<tr><td>Study statistics</td><td>Progress dashboard & charts</td><td>Local SwiftData</td><td><span class="bg bg-g">No</span></td></tr>
+<tr><td>Achievement records</td><td>Milestone tracking</td><td>Local SwiftData</td><td><span class="bg bg-g">No</span></td></tr>
+<tr><td>Purchase status</td><td>Membership verification</td><td>iOS Keychain (device-only)</td><td><span class="bg bg-g">No</span></td></tr>
+</tbody></table></div>
+<div class="sec"><h2>3. Data We Do NOT Collect</h2><p><span class="bg bg-r">None</span> The following is never collected:</p><ul>
+<li>Personal identity (name, email, phone, age, gender)</li><li>Device identifiers (IDFA, IDFV, advertising IDs)</li><li>Location data (GPS, IP geolocation)</li><li>Network activity or browsing history</li><li>Biometric data (face, fingerprint, health)</li><li>Photos, camera, microphone, contacts</li><li>Analytics, crash logs, behavioral telemetry</li>
+</ul></div>
+<div class="sec"><h2>4. Network & Third-Party Services</h2><div class="hl"><strong>Zero network connectivity.</strong> No HTTP requests, API calls, or data transmissions. All content bundled locally. Audio via built-in AVSpeechSynthesizer.</div><ul>
+<li><strong>No analytics SDKs</strong> — No Firebase, Mixpanel, etc.</li><li><strong>No ad SDKs</strong> — No advertising frameworks</li><li><strong>No crash reporting</strong> — No data sent to monitoring services</li><li><strong>No social login</strong> — No Facebook, Google auth</li><li><strong>No third-party dependencies</strong> — Only Apple native frameworks</li>
+</ul></div>
+<div class="sec"><h2>5. iCloud Backup (Optional)</h2><p><span class="bg bg-b">User-initiated</span> Optional iCloud backup for cross-device continuity:</p><ul>
+<li><strong>How:</strong> Tap "Backup to iCloud" → data written to your iCloud container (<code>iCloud.com.hanyu.app</code>).</li><li><strong>Not automatic:</strong> Backup/restore are manual operations.</li><li><strong>Your data stays yours:</strong> iCloud container tied to your Apple ID. No one else can access it.</li><li><strong>Backed up:</strong> All learning progress, preferences, mistakes, statistics, achievements.</li><li><strong>Not backed up:</strong> Purchase status (Keychain, device-only).</li>
+</ul></div>
+<div class="sec"><h2>6. In-App Purchases</h2><p>Purchases processed via Apple StoreKit. Payment handled entirely by Apple — we receive no payment info. Purchase status stored locally in Keychain with <code>kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly</code>.</p></div>
+<div class="sec"><h2>7. Permissions</h2><p>Only one optional permission:</p>
+<table class="tbl"><thead><tr><th>Permission</th><th>Purpose</th><th>Required?</th></tr></thead><tbody>
+<tr><td>Notifications</td><td>Daily study reminders</td><td><span class="bg bg-b">Optional</span> — only if you enable "Review Reminders"</td></tr>
+</tbody></table><p>No other permissions: Location, Camera, Photos, Contacts, Microphone, Health, Calendar are never accessed.</p></div>
+<div class="sec"><h2>8. Data Retention & Deletion</h2><p>All data stored locally. Delete by:</p><ul><li>Deleting the app (removes all SwiftData)</li><li>Disabling iCloud Drive for this app in iOS Settings</li></ul><p>No remote server exists to contact for deletion.</p></div>
+<div class="sec"><h2>9. Children's Privacy</h2><p>Suitable for all ages. No data collected from children or adults. No chat, social features, or third-party content exposure. In-app purchases require Apple ID auth controlled by parent/guardian.</p></div>
+<div class="sec"><h2>10. Changes to This Policy</h2><p>If data practices change, this policy will be updated with the new effective date. Given offline-first architecture, future changes would be minimal and transparent.</p></div>
+<div class="sec"><h2>11. Contact</h2><p>Questions about this policy?</p><p style="margin-top:8px"><strong>Developer:</strong> Hongyue<br><strong>Email:</strong> privacy@hanyu-app.com<br><strong>App Store:</strong> Hanyu — Learn Chinese</p></div>
+</div>
+
+<div id="L-zh" style="display:none">
+<div class="hd"><h1>隐私政策</h1><div class="sub">汉语 — 中文学习应用</div><div class="app">Bundle ID: com.hongyue.use-hanyu-1.hanyu<br>生效日期：2026年5月27日</div></div>
+<div class="sec"><h2>1. 概述</h2><p>汉语是一款离线优先的中文学习应用。你的学习数据只属于你自己。本应用不会收集、传输或与任何第三方共享个人数据。</p><div class="hl"><strong>核心原则：</strong>所有学习进度、设置和活动数据均保存在你的设备上。零第三方SDK、零分析追踪、零广告追踪器、零广告。</div></div>
+<div class="sec"><h2>2. 收集的数据</h2><p><span class="bg bg-g">最小化</span> 仅收集学习功能必需的数据，全部保存在本地：</p>
+<table class="tbl"><thead><tr><th>数据类型</th><th>用途</th><th>存储</th><th>共享？</th></tr></thead><tbody>
+<tr><td>学习进度</td><td>间隔重复与追踪</td><td>本地 SwiftData</td><td><span class="bg bg-g">否</span></td></tr>
+<tr><td>用户偏好</td><td>应用自定义</td><td>本地 SwiftData</td><td><span class="bg bg-g">否</span></td></tr>
+<tr><td>错题记录</td><td>错题回顾</td><td>本地 SwiftData</td><td><span class="bg bg-g">否</span></td></tr>
+<tr><td>学习统计</td><td>进度面板与图表</td><td>本地 SwiftData</td><td><span class="bg bg-g">否</span></td></tr>
+<tr><td>成就记录</td><td>里程碑追踪</td><td>本地 SwiftData</td><td><span class="bg bg-g">否</span></td></tr>
+<tr><td>购买状态</td><td>会员验证</td><td>iOS Keychain（仅本设备）</td><td><span class="bg bg-g">否</span></td></tr>
+</tbody></table></div>
+<div class="sec"><h2>3. 不收集的数据</h2><p><span class="bg bg-r">无</span> 以下数据从不收集：</p><ul><li>个人身份信息（姓名、邮箱、电话、年龄、性别）</li><li>设备标识符（IDFA、IDFV、广告标识符）</li><li>位置数据（GPS、IP定位）</li><li>网络活动或浏览历史</li><li>生物识别数据（面部、指纹、健康）</li><li>照片、相机、麦克风、通讯录</li><li>分析数据、崩溃日志、行为遥测</li></ul></div>
+<div class="sec"><h2>4. 网络与第三方</h2><div class="hl"><strong>零网络连接。</strong>无HTTP请求、API调用或数据传输。所有内容打包在本地。音频由内置AVSpeechSynthesizer生成。</div><ul><li><strong>无分析SDK</strong> — 无Firebase、Mixpanel等</li><li><strong>无广告SDK</strong> — 无广告框架</li><li><strong>无崩溃报告</strong> — 无数据发送到监控服务</li><li><strong>无社交登录</strong> — 无Facebook、Google认证</li><li><strong>无第三方依赖</strong> — 仅使用Apple原生框架</li></ul></div>
+<div class="sec"><h2>5. iCloud备份（可选）</h2><p><span class="bg bg-b">用户主动</span> 可选的iCloud备份用于跨设备同步：</p><ul><li><strong>方式：</strong>点击"备份至iCloud"→数据写入你的iCloud容器（<code>iCloud.com.hanyu.app</code>）</li><li><strong>非自动：</strong>备份/恢复为手动操作</li><li><strong>数据归属：</strong>iCloud容器绑定你的Apple ID，他人无法访问</li><li><strong>备份内容：</strong>学习进度、偏好、错题、统计、成就</li><li><strong>不备份：</strong>购买状态（Keychain，仅本设备）</li></ul></div>
+<div class="sec"><h2>6. 应用内购买</h2><p>购买通过Apple StoreKit处理。支付完全由Apple处理—我们不接收任何支付信息。购买状态使用<code>kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly</code>存储在本地Keychain中。</p></div>
+<div class="sec"><h2>7. 权限</h2><p>仅一个可选权限：</p>
+<table class="tbl"><thead><tr><th>权限</th><th>用途</th><th>必需？</th></tr></thead><tbody>
+<tr><td>通知</td><td>每日学习提醒</td><td><span class="bg bg-b">可选</span> — 开启"复习提醒"后启用</td></tr>
+</tbody></table><p>不请求其他权限：位置、相机、照片、通讯录、麦克风、健康、日历。</p></div>
+<div class="sec"><h2>8. 数据保留与删除</h2><p>所有数据保存在本地。可通过以下方式删除：</p><ul><li>删除应用（移除所有SwiftData）</li><li>在iOS设置中关闭此应用的iCloud Drive</li></ul><p>无需联系远程服务器进行数据删除。</p></div>
+<div class="sec"><h2>9. 儿童隐私</h2><p>适合所有年龄段。不从儿童或成人收集任何数据。无聊天、社交功能或第三方内容暴露。应用内购买需Apple ID认证，由家长控制。</p></div>
+<div class="sec"><h2>10. 政策变更</h2><p>如数据处理方式变更，将更新此政策并标注新日期。鉴于离线优先架构，未来变更将最小化且透明。</p></div>
+<div class="sec"><h2>11. 联系方式</h2><p>如有疑问请联系：</p><p style="margin-top:8px"><strong>开发者：</strong>Hongyue<br><strong>邮箱：</strong>privacy@hanyu-app.com<br><strong>App Store：</strong>汉语—学中文</p></div>
+</div>
+
+<div id="L-es" style="display:none">
+<div class="hd"><h1>Política de Privacidad</h1><div class="sub">Hanyu — App de aprendizaje de chino</div><div class="app">Bundle ID: com.hongyue.use-hanyu-1.hanyu<br>Fecha: 27 de mayo de 2026</div></div>
+<div class="sec"><h2>1. Resumen</h2><p>Hanyu es una app offline para aprender chino. Tus datos de aprendizaje solo pertenecen a ti. No recopilamos, transmitimos ni compartimos datos personales con terceros.</p><div class="hl"><strong>Principio fundamental:</strong> Todos tus progresos, ajustes y datos de actividad permanecen en tu dispositivo. Cero SDKs de terceros, cero analíticas, cero rastreadores, cero anuncios.</div></div>
+<div class="sec"><h2>2. Datos que recopilamos</h2><p><span class="bg bg-g">Mínimo</span> Solo datos necesarios para las funciones de aprendizaje, almacenados localmente:</p>
+<table class="tbl"><thead><tr><th>Dato</th><th>Propósito</th><th>Almacenamiento</th><th>Compartido?</th></tr></thead><tbody>
+<tr><td>Progreso de aprendizaje</td><td>Repetición espaciada y seguimiento</td><td>SwiftData local</td><td><span class="bg bg-g">No</span></td></tr>
+<tr><td>Preferencias de usuario</td><td>Personalización</td><td>SwiftData local</td><td><span class="bg bg-g">No</span></td></tr>
+<tr><td>Registro de errores</td><td>Revisión de errores</td><td>SwiftData local</td><td><span class="bg bg-g">No</span></td></tr>
+<tr><td>Estadísticas de estudio</td><td>Panel y gráficos</td><td>SwiftData local</td><td><span class="bg bg-g">No</span></td></tr>
+<tr><td>Logros</td><td>Seguimiento de hitos</td><td>SwiftData local</td><td><span class="bg bg-g">No</span></td></tr>
+<tr><td>Estado de compra</td><td>Verificación de membresía</td><td>Keychain (solo dispositivo)</td><td><span class="bg bg-g">No</span></td></tr>
+</tbody></table></div>
+<div class="sec"><h2>3. Datos que NO recopilamos</h2><p><span class="bg bg-r">Ninguno</span> Nunca recopilamos:</p><ul><li>Identidad personal (nombre, email, teléfono, edad, género)</li><li>Identificadores de dispositivo (IDFA, IDFV)</li><li>Datos de ubicación (GPS, geolocalización IP)</li><li>Actividad de red o historial de navegación</li><li>Datos biométricos (cara, huella, salud)</li><li>Fotos, cámara, micrófono, contactos</li><li>Analíticas, registros de errores o telemetría</li></ul></div>
+<div class="sec"><h2>4. Red y servicios de terceros</h2><div class="hl"><strong>Cero conectividad de red.</strong> Sin solicitudes HTTP, llamadas API o transmisión de datos. Todo el contenido está incluido localmente. Audio mediante AVSpeechSynthesizer integrado.</div><ul><li><strong>Sin SDKs de analíticas</strong></li><li><strong>Sin SDKs de anuncios</strong></li><li><strong>Sin informes de errores</strong></li><li><strong>Sin inicio social</strong></li><li><strong>Sin dependencias de terceros</strong> — Solo frameworks nativos de Apple</li></ul></div>
+<div class="sec"><h2>5. Copia de seguridad en iCloud (Opcional)</h2><p><span class="bg bg-b">Iniciado por el usuario</span> Copia de seguridad opcional para continuidad entre dispositivos:</p><ul><li><strong>Cómo:</strong> Toca "Backup en iCloud" → datos escritos en tu contenedor (<code>iCloud.com.hanyu.app</code>)</li><li><strong>No automático:</strong> Backup/restauración son manuales</li><li><strong>Tus datos son tuyos:</strong> Contenedor vinculado a tu Apple ID</li><li><strong>Backup incluye:</strong> Progreso, preferencias, errores, estadísticas, logros</li><li><strong>No incluye:</strong> Estado de compra (Keychain, solo dispositivo)</li></ul></div>
+<div class="sec"><h2>6. Compras dentro de la app</h2><p>Procesadas vía StoreKit de Apple. El pago es manejado por Apple — no recibimos información de pago. Estado de compra almacenado localmente en Keychain.</p></div>
+<div class="sec"><h2>7. Permisos</h2><p>Solo un permiso opcional:</p>
+<table class="tbl"><thead><tr><th>Permiso</th><th>Propósito</th><th>Requerido?</th></tr></thead><tbody>
+<tr><td>Notificaciones</td><td>Recordatorios de estudio diario</td><td><span class="bg bg-b">Opcional</span></td></tr>
+</tbody></table><p>No se accede a: Ubicación, Cámara, Fotos, Contactos, Micrófono, Salud, Calendario.</p></div>
+<div class="sec"><h2>8. Retención y eliminación de datos</h2><p>Todos los datos están locales. Elimina:</p><ul><li>Borrando la app (elimina SwiftData)</li><li>Desactivando iCloud Drive en Configuración</li></ul><p>No existe servidor remoto para solicitar eliminación.</p></div>
+<div class="sec"><h2>9. Privacidad de menores</h2><p>Apta para todas las edades. No se recopilan datos de menores o adultos. Sin chat, funciones sociales o exposición a contenido de terceros. Compras requieren autenticación Apple ID controlada por padres.</p></div>
+<div class="sec"><h2>10. Cambios en esta política</h2><p>Si las prácticas cambian, se actualizará con nueva fecha. Cambios futuros serán mínimos y transparentes.</p></div>
+<div class="sec"><h2>11. Contacto</h2><p>Preguntas sobre esta política?</p><p style="margin-top:8px"><strong>Desarrollador:</strong> Hongyue<br><strong>Email:</strong> privacy@hanyu-app.com<br><strong>App Store:</strong> Hanyu — Aprende chino</p></div>
+</div>
+
+<div id="L-fr" style="display:none">
+<div class="hd"><h1>Politique de Confidentialité</h1><div class="sub">Hanyu — App d'apprentissage du chinois</div><div class="app">Bundle ID: com.hongyue.use-hanyu-1.hanyu<br>Date : 27 mai 2026</div></div>
+<div class="sec"><h2>1. Aperçu</h2><p>Hanyu est une app hors ligne pour apprendre le chinois. Vos données vous appartiennent. Aucune collecte, transmission ou partage de données personnelles.</p><div class="hl"><strong>Principe :</strong> Tous vos progrès, paramètres et données restent sur votre appareil. Zéro SDK tiers, zéro analyse, zéro tracker, zéro pub.</div></div>
+<div class="sec"><h2>2. Données collectées</h2><p><span class="bg bg-g">Minimal</span> Données nécessaires uniquement, stockées localement :</p>
+<table class="tbl"><thead><tr><th>Donnée</th><th>Usage</th><th>Stockage</th><th>Partagée?</th></tr></thead><tbody>
+<tr><td>Progrès d'apprentissage</td><td>Répétition espacée & suivi</td><td>SwiftData local</td><td><span class="bg bg-g">Non</span></td></tr>
+<tr><td>Préférences utilisateur</td><td>Personnalisation</td><td>SwiftData local</td><td><span class="bg bg-g">Non</span></td></tr>
+<tr><td>Erreurs</td><td>Révision des erreurs</td><td>SwiftData local</td><td><span class="bg bg-g">Non</span></td></tr>
+<tr><td>Statistiques d'étude</td><td>Tableau de bord</td><td>SwiftData local</td><td><span class="bg bg-g">Non</span></td></tr>
+<tr><td>Achievements</td><td>Suivi des jalons</td><td>SwiftData local</td><td><span class="bg bg-g">Non</span></td></tr>
+<tr><td>Statut d'achat</td><td>Vérification d'abonnement</td><td>Keychain (appareil uniquement)</td><td><span class="bg bg-g">Non</span></td></tr>
+</tbody></table></div>
+<div class="sec"><h2>3. Données NON collectées</h2><p><span class="bg bg-r">Aucune</span> Jamais collectées :</p><ul><li>Identité personnelle (nom, email, téléphone, âge, sexe)</li><li>Identificateurs de appareil (IDFA, IDFV)</li><li>Localisation (GPS, IP)</li><li>Activité réseau ou historique de navigation</li><li>Données biométriques</li><li>Photos, caméra, micro, contacts</li><li>Analyses, crash logs, telemetry</li></ul></div>
+<div class="sec"><h2>4. Réseau et services tiers</h2><div class="hl"><strong>Zéro connectivité réseau.</strong> Pas de requêtes HTTP, appels API ou transmissions. Contenu intégré localement. Audio via AVSpeechSynthesizer.</div><ul><li><strong>Pas de SDK d'analyse</strong></li><li><strong>Pas de SDK publicitaire</strong></li><li><strong>Pas de rapports de crash</strong></li><li><strong>Pas de login social</strong></li><li><strong>Pas de dépendances tierces</strong> — Frameworks Apple uniquement</li></ul></div>
+<div class="sec"><h2>5. Sauvegarde iCloud (Optionnel)</h2><p><span class="bg bg-b">Initié par l'utilisateur</span> Sauvegarde iCloud optionnelle :</p><ul><li><strong>Comment :</strong> Appuyez sur "Sauvegarder" → données dans votre conteneur (<code>iCloud.com.hanyu.app</code>)</li><li><strong>Non automatique :</strong> Sauvegarde/restauration manuelles</li><li><strong>Vos données :</strong> Conteneur lié à votre Apple ID</li><li><strong>Sauvegardé :</strong> Progrès, préférences, erreurs, stats, achievements</li><li><strong>Non sauvegardé :</strong> Statut d'achat (Keychain)</li></ul></div>
+<div class="sec"><h2>6. Achats in-app</h2><p>Via StoreKit Apple. Paiement géré par Apple — nous ne recevons aucune info de paiement. Statut stocké localement dans Keychain.</p></div>
+<div class="sec"><h2>7. Permissions</h2><p>Une permission optionnelle :</p>
+<table class="tbl"><thead><tr><th>Permission</th><th>Usage</th><th>Requise?</th></tr></thead><tbody>
+<tr><td>Notifications</td><td>Rappels d'étude quotidiens</td><td><span class="bg bg-b">Optionnel</span></td></tr>
+</tbody></table><p>Aucune autre permission : Localisation, Caméra, Photos, Contacts, Micro, Santé, Calendrier.</p></div>
+<div class="sec"><h2>8. Conservation et suppression</h2><p>Données locales uniquement. Supprimez en :</p><ul><li>Supprimant l'app (supprime SwiftData)</li><li>Désactivant iCloud Drive dans Réglages</li></ul><p>Aucun serveur distant à contacter.</p></div>
+<div class="sec"><h2>9. Privacité des enfants</h2><p>Adaptée à tous les âges. Aucune collecte de données. Pas de chat, fonctions sociales ou contenu tiers. Achats via Apple ID contrôlé par les parents.</p></div>
+<div class="sec"><h2>10. Modifications</h2><p>Si les pratiques changent, cette politique sera mise à jour. Modifications futures minimales et transparentes.</p></div>
+<div class="sec"><h2>11. Contact</h2><p>Questions ?</p><p style="margin-top:8px"><strong>Développeur :</strong> Hongyue<br><strong>Email :</strong> privacy@hanyu-app.com<br><strong>App Store :</strong> Hanyu — Apprendre le chinois</p></div>
+</div>
+
+<div id="L-ar" style="display:none" dir="rtl">
+<div class="hd"><h1>سياسة الخصوصية</h1><div class="sub">Hanyu — تطبيق تعلم الصينية</div><div class="app">Bundle ID: com.hongyue.use-hanyu-1.hanyu<br>تاريخ السريان: 27 مايو 2026</div></div>
+<div class="sec"><h2>1. نظرة عامة</h2><p>Hanyu هو تطبيق تعلم الصينية يعمل بدون اتصال. بياناتك تنتمي لك فقط. لا يجمع أو يرسل أو يشارك أي بيانات شخصية.</p><div class="hl"><strong>المبدأ الأساسي:</strong> جميع بياناتك تبقى على جهازك. صفر SDKات خارجية، صفر تحليلات، صفر متتبعات، صفر إعلانات.</div></div>
+<div class="sec"><h2>2. البيانات التي نجمعها</h2><p><span class="bg bg-g">أدنى</span> فقط البيانات الضرورية، مخزنة على جهازك:</p>
+<table class="tbl"><thead><tr><th>البيانات</th><th>الغرض</th><th>التخزين</th><th>مشاركة?</th></tr></thead><tbody>
+<tr><td>تقدم التعلم</td><td>التكرار المتباعد والتتبع</td><td>SwiftData محلي</td><td><span class="bg bg-g">لا</span></td></tr>
+<tr><td>تفضيلات المستخدم</td><td>تخصيص التطبيق</td><td>SwiftData محلي</td><td><span class="bg bg-g">لا</span></td></tr>
+<tr><td>سجل الأخطاء</td><td>مراجعة الأخطاء</td><td>SwiftData محلي</td><td><span class="bg bg-g">لا</span></td></tr>
+<tr><td>إحصائيات الدراسة</td><td>لوحة ورسوم بيانية</td><td>SwiftData محلي</td><td><span class="bg bg-g">لا</span></td></tr>
+<tr><td>الإنجازات</td><td>تتبع المعالم</td><td>SwiftData محلي</td><td><span class="bg bg-g">لا</span></td></tr>
+<tr><td>حالة الشراء</td><td>التحقق من العضوية</td><td>Keychain (الجهاز فقط)</td><td><span class="bg bg-g">لا</span></td></tr>
+</tbody></table></div>
+<div class="sec"><h2>3. البيانات التي لا نجمعها</h2><p><span class="bg bg-r">لا شيء</span> لا نجمع أبدا:</p><ul><li>الهوية الشخصية (الاسم، البريد، الهاتف، العمر، الجنس)</li><li>معرفات الجهاز (IDFA، IDFV)</li><li>بيانات الموقع (GPS، IP)</li><li>نشاط الشبكة أو تاريخ التصفح</li><li>البيانات البيومترية</li><li>الصور، الكاميرا، الميكروفون، جهات الاتصال</li><li>التحليلات، سجلات الأعطال، القياس عن بعد</li></ul></div>
+<div class="sec"><h2>4. الشبكة والخدمات الخارجية</h2><div class="hl"><strong>صفر اتصال بالشبكة.</strong> لا طلبات HTTP أو مكالمات API. المحتوى مضمن محليا. الصوت عبر AVSpeechSynthesizer المدمج.</div><ul><li><strong>لا SDK تحليلات</strong></li><li><strong>لا SDK إعلانات</strong></li><li><strong>لا تقارير أعطال</strong></li><li><strong>لا تسجيل دخول اجتماعي</strong></li><li><strong>لا تبعيات خارجية</strong> — فقط أطر Apple</li></ul></div>
+<div class="sec"><h2>5. نسخ iCloud الاحتياطي (اختياري)</h2><p><span class="bg bg-b">بمبادرة المستخدم</span> نسخ احتياطي اختياري:</p><ul><li><strong>كيف:</strong> اضغط "نسخ احتياطي" ← البيانات في حاوية iCloud الخاصة بك</li><li><strong>ليس تلقائي:</strong> النسخ/الاستعادة يدوية</li><li><strong>بياناتك:</strong> الحاوية مرتبطة بApple ID الخاص بك</li><li><strong>النسخ:</strong> التقدم، التفضيلات، الأخطاء، الإحصائيات، الإنجازات</li><li><strong>لا نسخ:</strong> حالة الشراء (Keychain)</li></ul></div>
+<div class="sec"><h2>6. المشتريات داخل التطبيق</h2><p>عبر StoreKit من Apple. الدpayment بواسطة Apple — لا نتلقى معلومات دفع. حالة الشراء مخزنة محليا في Keychain.</p></div>
+<div class="sec"><h2>7. الأذونات</h2><p>إذن اختياري واحد فقط:</p>
+<table class="tbl"><thead><tr><th>الإذن</th><th>الغرض</th><th>مطلوب?</th></tr></thead><tbody>
+<tr><td>الإشعارات</td><td>تذكيرات الدراسة اليومية</td><td><span class="bg bg-b">اختياري</span></td></tr>
+</tbody></table><p>لا أذونات أخرى: الموقع، الكاميرا، الصور، جهات الاتصال، الميكروفون، الصحة، التقويم.</p></div>
+<div class="sec"><h2>8. الاحتفاظ بالبيانات وحذفها</h2><p>البيانات محلية فقط. احذف:</p><ul><li>بإزالة التطبيق (يزيل SwiftData)</li><li>بتعطيل iCloud Drive في الإعدادات</li></ul><p>لا خادم بعيد للاتصال.</p></div>
+<div class="sec"><h2>9. خصوصية الأطفال</h2><p>مناسب لجميع الأعمار. لا جمع بيانات. لا محادثة أو ميزات اجتماعية. المشتريات تتطلب Apple ID يتحكم فيه الوالدين.</p></div>
+<div class="sec"><h2>10. التغييرات</h2><p>إذا تغيرت الممارسات، سيتم التحديث. التغييرات ستكون minimal وشفافة.</p></div>
+<div class="sec"><h2>11. الاتصال</h2><p>أسئلة عن السياسة?</p><p style="margin-top:8px"><strong>المطور:</strong> Hongyue<br><strong>البريد:</strong> privacy@hanyu-app.com<br><strong>App Store:</strong> Hanyu — تعلم الصينية</p></div>
+</div>
+
+<div id="L-pt" style="display:none">
+<div class="hd"><h1>Política de Privacidade</h1><div class="sub">Hanyu — App de aprendizado de chinês</div><div class="app">Bundle ID: com.hongyue.use-hanyu-1.hanyu<br>Data: 27 de maio de 2026</div></div>
+<div class="sec"><h2>1. Visão geral</h2><p>Hanyu é um app offline para aprender chinês. Seus dados pertencem apenas a você. Não coletamos, transmitimos ou compartilhamos dados pessoais.</p><div class="hl"><strong>Princípio:</strong> Todos seus dados ficam no dispositivo. Zero SDKs de terceiros, zero análises, zero rastreadores, zero anúncios.</div></div>
+<div class="sec"><h2>2. Dados coletados</h2><p><span class="bg bg-g">Mínimo</span> Apenas dados necessários, armazenados localmente:</p>
+<table class="tbl"><thead><tr><th>Dados</th><th>Propósito</th><th>Armazenamento</th><th>Compartilhado?</th></tr></thead><tbody>
+<tr><td>Progresso de aprendizado</td><td>Repetição espaçada & rastreamento</td><td>SwiftData local</td><td><span class="bg bg-g">Não</span></td></tr>
+<tr><td>Preferências</td><td>Personalização</td><td>SwiftData local</td><td><span class="bg bg-g">Não</span></td></tr>
+<tr><td>Erros</td><td>Revisão de erros</td><td>SwiftData local</td><td><span class="bg bg-g">Não</span></td></tr>
+<tr><td>Estatísticas</td><td>Painel & gráficos</td><td>SwiftData local</td><td><span class="bg bg-g">Não</span></td></tr>
+<tr><td>Conquistas</td><td>Marcos</td><td>SwiftData local</td><td><span class="bg bg-g">Não</span></td></tr>
+<tr><td>Status de compra</td><td>Verificação de membro</td><td>Keychain (dispositivo)</td><td><span class="bg bg-g">Não</span></td></tr>
+</tbody></table></div>
+<div class="sec"><h2>3. Dados NÃO coletados</h2><p><span class="bg bg-r">Nenhum</span> Nunca coletados:</p><ul><li>Identidade pessoal</li><li>Identificadores do dispositivo</li><li>Localização (GPS, IP)</li><li>Atividade de rede</li><li>Dados biométricos</li><li>Fotos, câmera, microfone, contatos</li><li>Análises, logs de crash, telemetria</li></ul></div>
+<div class="sec"><h2>4. Rede e serviços terceiros</h2><div class="hl"><strong>Zero conectividade.</strong> Sem requisições HTTP ou APIs. Conteúdo local. Audio via AVSpeechSynthesizer.</div><ul><li><strong>Sem SDKs de análise</strong></li><li><strong>Sem SDKs de anúncios</strong></li><li><strong>Sem crash reports</strong></li><li><strong>Sem login social</strong></li><li><strong>Sem dependências terceiras</strong></li></ul></div>
+<div class="sec"><h2>5. Backup iCloud (Opcional)</h2><p><span class="bg bg-b">Iniciado pelo usuário</span> Backup opcional:</p><ul><li><strong>Como:</strong> Toque "Backup" → dados no seu container iCloud</li><li><strong>Não automático:</strong> Backup/restauração manuais</li><li><strong>Seus dados:</strong> Container vinculado ao Apple ID</li><li><strong>Backup:</strong> Progresso, preferências, erros, stats, conquistas</li><li><strong>Não:</strong> Status de compra (Keychain)</li></ul></div>
+<div class="sec"><h2>6. Compras in-app</h2><p>Via StoreKit. Pagamento pelo Apple — sem info de pagamento. Status local no Keychain.</p></div>
+<div class="sec"><h2>7. Permissões</h2><p>Uma permissão opcional:</p>
+<table class="tbl"><thead><tr><th>Permissão</th><th>Propósito</th><th>Necessária?</th></tr></thead><tbody>
+<tr><td>Notificações</td><td>Lembretes de estudo</td><td><span class="bg bg-b">Opcional</span></td></tr>
+</tbody></table><p>Sem outras: Localização, Câmera, Fotos, Contatos, Microfone, Saúde, Calendário.</p></div>
+<div class="sec"><h2>8. Retenção e exclusão</h2><p>Dados locais. Exclua:</p><ul><li>Deletando o app</li><li>Desativando iCloud Drive em Configurações</li></ul><p>Nenhum servidor remoto.</p></div>
+<div class="sec"><h2>9. Privacidade infantil</h2><p>Para todas as idades. Sem coleta. Sem chat/social. Compras via Apple ID controlado pelos pais.</p></div>
+<div class="sec"><h2>10. Alterações</h2><p>Alterações serão atualizadas com nova data. Minimal e transparente.</p></div>
+<div class="sec"><h2>11. Contato</h2><p>Dúvidas?</p><p style="margin-top:8px"><strong>Desenvolvedor:</strong> Hongyue<br><strong>Email:</strong> privacy@hanyu-app.com<br><strong>App Store:</strong> Hanyu — Aprenda chinês</p></div>
+</div>
+
+<div id="L-de" style="display:none">
+<div class="hd"><h1>Datenschutzrichtlinie</h1><div class="sub">Hanyu — Chinesisch-Lern-App</div><div class="app">Bundle ID: com.hongyue.use-hanyu-1.hanyu<br>Gültig ab: 27. Mai 2026</div></div>
+<div class="sec"><h2>1. Überblick</h2><p>Hanyu ist eine offline Chinesisch-Lern-App. Ihre Daten gehören Ihnen. Keine Sammlung, Übermittlung oder Weitergabe persönlicher Daten.</p><div class="hl"><strong>Prinzip:</strong> Alle Daten bleiben auf Ihrem Gerät. Keine Drittanbieter-SDKs, keine Analysen, keine Tracker, keine Werbung.</div></div>
+<div class="sec"><h2>2. Gesammelte Daten</h2><p><span class="bg bg-g">Minimal</span> Nur notwendige Daten, lokal gespeichert:</p>
+<table class="tbl"><thead><tr><th>Daten</th><th>Zweck</th><th>Speicherung</th><th>Geteilt?</th></tr></thead><tbody>
+<tr><td>Lernfortschritt</td><td>Spaced Repetition & Tracking</td><td>Lokale SwiftData</td><td><span class="bg bg-g">Nein</span></td></tr>
+<tr><td>Einstellungen</td><td>App-Anpassung</td><td>Lokale SwiftData</td><td><span class="bg bg-g">Nein</span></td></tr>
+<tr><td>Fehleraufzeichnungen</td><td>Fehlerüberprüfung</td><td>Lokale SwiftData</td><td><span class="bg bg-g">Nein</span></td></tr>
+<tr><td>Statistiken</td><td>Dashboard & Diagramme</td><td>Lokale SwiftData</td><td><span class="bg bg-g">Nein</span></td></tr>
+<tr><td>Errungenschaften</td><td>Meilensteine</td><td>Lokale SwiftData</td><td><span class="bg bg-g">Nein</span></td></tr>
+<tr><td>Kaufstatus</td><td>Mitgliedsprüfung</td><td>Keychain (Gerät)</td><td><span class="bg bg-g">Nein</span></td></tr>
+</tbody></table></div>
+<div class="sec"><h2>3. NICHT gesammelte Daten</h2><p><span class="bg bg-r">Keine</span> Nie gesammelt:</p><ul><li>Personalien (Name, E-Mail, Telefon, Alter)</li><li>Geräte-IDs (IDFA, IDFV)</li><li>Standort (GPS, IP)</li><li>Netzwerkaktivität</li><li>Biometrische Daten</li><li>Fotos, Kamera, Mikro, Kontakte</li><li>Analysen, Crash-Logs, Telemetrie</li></ul></div>
+<div class="sec"><h2>4. Netz & Drittanbieter</h2><div class="hl"><strong>Keine Netzverbindung.</strong> Keine HTTP-Anfragen oder APIs. Inhalt lokal eingebettet. Audio über AVSpeechSynthesizer.</div><ul><li><strong>Keine Analyse-SDKs</strong></li><li><strong>Keine Ad-SDKs</strong></li><li><strong>Keine Crash-Berichte</strong></li><li><strong>Kein Social Login</strong></li><li><strong>Keine Drittanbieter</strong></li></ul></div>
+<div class="sec"><h2>5. iCloud-Backup (Optional)</h2><p><span class="bg bg-b">Nutzerinitiiert</span> Optionales Backup:</p><ul><li><strong>Wie:</strong> "Backup" → Daten in Ihrem iCloud-Container</li><li><strong>Nicht automatisch:</strong> Manuell</li><li><strong>Ihre Daten:</strong> Container an Apple ID gebunden</li><li><strong>Backup:</strong> Fortschritt, Einstellungen, Fehler, Stats, Errungenschaften</li><li><strong>Nicht:</strong> Kaufstatus (Keychain)</li></ul></div>
+<div class="sec"><h2>6. In-App-Käufe</h2><p>Über Apple StoreKit. Zahlung durch Apple — keine Zahlungsinfos. Status lokal im Keychain.</p></div>
+<div class="sec"><h2>7. Berechtigungen</h2><p>Eine optionale Berechtigung:</p>
+<table class="tbl"><thead><tr><th>Berechtigung</th><th>Zweck</th><th>Erforderlich?</th></tr></thead><tbody>
+<tr><td>Benachrichtigungen</td><td>Lernreminders</td><td><span class="bg bg-b">Optional</span></td></tr>
+</tbody></table><p>Keine weiteren: Standort, Kamera, Fotos, Kontakte, Mikro, Gesundheit.</p></div>
+<div class="sec"><h2>8. Datenlöschung</h2><p>Lokale Daten. Löschen:</p><ul><li>App entfernen</li><li>iCloud Drive deaktivieren</li></ul><p>Kein Remote-Server.</p></div>
+<div class="sec"><h2>9. Kinder-Datenschutz</h2><p>Alle Altersgruppen. Keine Datensammlung. Kein Chat/Social. Käufe via Apple ID durch Eltern.</p></div>
+<div class="sec"><h2>10. Änderungen</h2><p>Updates mit neuem Datum. Minimal und transparent.</p></div>
+<div class="sec"><h2>11. Kontakt</h2><p>Fragen?</p><p style="margin-top:8px"><strong>Entwickler:</strong> Hongyue<br><strong>E-Mail:</strong> privacy@hanyu-app.com<br><strong>App Store:</strong> Hanyu — Chinesisch lernen</p></div>
+</div>
+
+<div id="L-ja" style="display:none">
+<div class="hd"><h1>プライバシーポリシー</h1><div class="sub">Hanyu — 中国語学習アプリ</div><div class="app">Bundle ID: com.hongyue.use-hanyu-1.hanyu<br>施行日：2026年5月27日</div></div>
+<div class="sec"><h2>1. 概要</h2><p>Hanyuはオフライン優先の中国語学習アプリです。学習データはあなただけのものです。個人データの収集・送信・共有は一切ありません。</p><div class="hl"><strong>基本原則：</strong>全データは端末上に留まります。第三者SDKゼロ、分析ゼロ、トラッカーゼロ、広告ゼロ。</div></div>
+<div class="sec"><h2>2. 収集データ</h2><p><span class="bg bg-g">最小限</span> 学習機能に必要なデータのみ、全て端末内保存：</p>
+<table class="tbl"><thead><tr><th>データ</th><th>目的</th><th>保存</th><th>共有?</th></tr></thead><tbody>
+<tr><td>学習進捗</td><td>分散反復・追跡</td><td>SwiftData（端末内）</td><td><span class="bg bg-g">なし</span></td></tr>
+<tr><td>ユーザー設定</td><td>アプリカスタマイズ</td><td>SwiftData（端末内）</td><td><span class="bg bg-g">なし</span></td></tr>
+<tr><td>誤答記録</td><td>誤答レビュー</td><td>SwiftData（端末内）</td><td><span class="bg bg-g">なし</span></td></tr>
+<tr><td>学習統計</td><td>ダッシュボード・グラフ</td><td>SwiftData（端末内）</td><td><span class="bg bg-g">なし</span></td></tr>
+<tr><td>達成記録</td><td>マイルストーン</td><td>SwiftData（端末内）</td><td><span class="bg bg-g">なし</span></td></tr>
+<tr><td>購入状態</td><td>会員確認</td><td>Keychain（端末のみ）</td><td><span class="bg bg-g">なし</span></td></tr>
+</tbody></table></div>
+<div class="sec"><h2>3. 収集しないデータ</h2><p><span class="bg bg-r">なし</span> 一切収集しません：</p><ul><li>個人情報（名前・メール・電話・年齢・性別）</li><li>端末識別子（IDFA・IDFV）</li><li>位置情報（GPS・IP）</li><li>ネットワーク活動</li><li>生体認証データ</li><li>写真・カメラ・マイク・連絡先</li><li>分析・クラッシュログ・テレメトリ</li></ul></div>
+<div class="sec"><h2>4. ネットワーク・第三者</h2><div class="hl"><strong>ネットワーク接続ゼロ。</strong>HTTP・API通信なし。コンテンツは全て端末内。音声はAVSpeechSynthesizerで生成。</div><ul><li><strong>分析SDKなし</strong></li><li><strong>広告SDKなし</strong></li><li><strong>クラッシュ報告なし</strong></li><li><strong>ソーシャルログインなし</strong></li><li><strong>第三者依存なし</strong> — Appleネイティブのみ</li></ul></div>
+<div class="sec"><h2>5. iCloudバックアップ（任意）</h2><p><span class="bg bg-b">ユーザー手動</span> 任意のiCloudバックアップ：</p><ul><li><strong>方法：</strong>"バックアップ"タップ→iCloudコンテナに保存</li><li><strong>自動なし：</strong>手動操作のみ</li><li><strong>あなたのデータ：</strong>コンテナはApple IDに紐付け</li><li><strong>バックアップ：</strong>進捗・設定・誤答・統計・達成</li><li><strong>非バックアップ：</strong>購入状態（Keychain）</li></ul></div>
+<div class="sec"><h2>6. アプリ内購入</h2><p>Apple StoreKit経由。支払いはApple処理—支払い情報受領なし。状態はKeychainに端末内保存。</p></div>
+<div class="sec"><h2>7. 権限</h2><p>1つの任意権限のみ：</p>
+<table class="tbl"><thead><tr><th>権限</th><th>目的</th><th>必須?</th></tr></thead><tbody>
+<tr><td>通知</td><td>学習リマインダー</td><td><span class="bg bg-b">任意</span></td></tr>
+</tbody></table><p>その他権限なし：位置・カメラ・写真・連絡先・マイク・健康・カレンダー。</p></div>
+<div class="sec"><h2>8. データ保持・削除</h2><p>全データ端末内。削除方法：</p><ul><li>アプリ削除（SwiftData削除）</li><li>設定でiCloud Drive無効化</li></ul><p>リモートサーバーなし。</p></div>
+<div class="sec"><h2>9. 子どものプライバシー</h2><p>全年齢対象。データ収集なし。チャット・ソーシャルなし。購入はApple ID認証（親管理）。</p></div>
+<div class="sec"><h2>10. 政策変更</h2><p>変更時は更新。最小限かつ透明。</p></div>
+<div class="sec"><h2>11. お問い合わせ</h2><p>ご質問は：</p><p style="margin-top:8px"><strong>開発者：</strong>Hongyue<br><strong>メール：</strong>privacy@hanyu-app.com<br><strong>App Store：</strong>Hanyu — 中国語学習</p></div>
+</div>
+
+<div id="L-ko" style="display:none">
+<div class="hd"><h1>개인정보 처리방침</h1><div class="sub">Hanyu — 중국어 학습 앱</div><div class="app">Bundle ID: com.hongyue.use-hanyu-1.hanyu<br>시행일: 2026년 5월 27일</div></div>
+<div class="sec"><h2>1. 개요</h2><p>Hanyu는 오프라인 중국어 학습 앱입니다. 학습 데이터는 사용자만의 것입니다. 개인 데이터 수집·전송·공유 없음.</p><div class="hl"><strong>원칙:</strong> 모든 데이터는 기기에 저장. 제3자 SDK 0, 분석 0, 트래커 0, 광고 0.</div></div>
+<div class="sec"><h2>2. 수집 데이터</h2><p><span class="bg bg-g">최소</span> 학습 기능에 필요한 데이터만, 기기 내 저장:</p>
+<table class="tbl"><thead><tr><th>데이터</th><th>목적</th><th>저장</th><th>공유?</th></tr></thead><tbody>
+<tr><td>학습 진행</td><td>간격 반복 & 추적</td><td>SwiftData(기기)</td><td><span class="bg bg-g">아니오</span></td></tr>
+<tr><td>사용자 설정</td><td>앱 맞춤</td><td>SwiftData(기기)</td><td><span class="bg bg-g">아니오</span></td></tr>
+<tr><td>오답 기록</td><td>오답 복습</td><td>SwiftData(기기)</td><td><span class="bg bg-g">아니오</span></td></tr>
+<tr><td>학습 통계</td><td>대시보드 & 차트</td><td>SwiftData(기기)</td><td><span class="bg bg-g">아니오</span></td></tr>
+<tr><td>성과</td><td>마일스톤</td><td>SwiftData(기기)</td><td><span class="bg bg-g">아니오</span></td></tr>
+<tr><td>구매 상태</td><td>멤버십 확인</td><td>Keychain(기기)</td><td><span class="bg bg-g">아니오</span></td></tr>
+</tbody></table></div>
+<div class="sec"><h2>3. 수집하지 않는 데이터</h2><p><span class="bg bg-r">없음</span> 수집하지 않음:</p><ul><li>개인 정보(이름, 이메일, 전화, 나이, 성별)</li><li>기기 식별자(IDFA, IDFV)</li><li>위치(GPS, IP)</li><li>네트워크 활동</li><li>생체 데이터</li><li>사진, 카메라, 마이크, 연락처</li><li>분석, 크래시 로그, 텔레메트리</li></ul></div>
+<div class="sec"><h2>4. 네트워크 & 제3자</h2><div class="hl"><strong>네트워크 연결 제로.</strong>HTTP/API 없음. 콘텐츠 내장. 오디오는 AVSpeechSynthesizer.</div><ul><li><strong>분석 SDK 없음</strong></li><li><strong>광고 SDK 없음</strong></li><li><strong>크래시 보고 없음</strong></li><li><strong>소셜 로그인 없음</strong></li><li><strong>제3자 의존 없음</strong></li></ul></div>
+<div class="sec"><h2>5. iCloud 백업(선택)</h2><p><span class="bg bg-b">사용자 선택</span> 선택적 iCloud 백업:</p><ul><li><strong>방법:</strong>"백업"탭→iCloud 컨테이너에 저장</li><li><strong>자동 없음:</strong>수동</li><li><strong>사용자 데이터:</strong>컨테이너는 Apple ID에 연결</li><li><strong>백업:</strong>진행, 설정, 오답, 통계, 성과</li><li><strong>미백업:</strong>구매 상태(Keychain)</li></ul></div>
+<div class="sec"><h2>6. 인앱 구매</h2><p>Apple StoreKit. 결제 Apple 처리—결제 정보 수신 없음. 상태 Keychain 저장.</p></div>
+<div class="sec"><h2>7. 권한</h2><p>1개 선택 권한:</p>
+<table class="tbl"><thead><tr><th>권한</th><th>목적</th><th>필수?</th></tr></thead><tbody>
+<tr><td>알림</td><td>학습 리마인더</td><td><span class="bg bg-b">선택</span></td></tr>
+</tbody></table><p>다른 권한 없음: 위치, 카메라, 사진, 연락처, 마이크, 건강, 캘린더.</p></div>
+<div class="sec"><h2>8. 데이터 보존 & 삭제</h2><p>기기 내 데이터. 삭제:</p><ul><li>앱 삭제(SwiftData 삭제)</li><li>설정에서 iCloud Drive 비활성화</li></ul><p>원격 서버 없음.</p></div>
+<div class="sec"><h2>9. 아동 개인정보</h2><p>모든 연령. 데이터 수집 없음. 채팅/소셜 없음. 구매는 Apple ID 인증(부모 관리).</p></div>
+<div class="sec"><h2>10. 정책 변경</h2><p>변경 시 업데이트. 최소화 및 투명.</p></div>
+<div class="sec"><h2>11. 연락</h2><p>질문?</p><p style="margin-top:8px"><strong>개발자:</strong>Hongyue<br><strong>이메일:</strong>privacy@hanyu-app.com<br><strong>App Store:</strong>Hanyu — 중국어 학습</p></div>
+</div>
+
+<div id="L-ru" style="display:none">
+<div class="hd"><h1>Политика конфиденциальности</h1><div class="sub">Hanyu — Приложение для изучения китайского</div><div class="app">Bundle ID: com.hongyue.use-hanyu-1.hanyu<br>Дата: 27 мая 2026</div></div>
+<div class="sec"><h2>1. Обзор</h2><p>Hanyu — офлайн-приложение для изучения китайского. Ваши данные принадлежат вам. Мы не собираем, передаём или передаем личные данные третьим лицам.</p><div class="hl"><strong>Принцип:</strong> Все данные остаются на устройстве. Ноль сторонних SDK, ноль аналитики, ноль трекеров, ноль рекламы.</div></div>
+<div class="sec"><h2>2. Собираемые данные</h2><p><span class="bg bg-g">Минимум</span> Только необходимые, хранятся локально:</p>
+<table class="tbl"><thead><tr><th>Данные</th><th>Цель</th><th>Хранение</th><th>Общий доступ?</th></tr></thead><tbody>
+<tr><td>Прогресс обучения</td><td>Интервальное повторение</td><td>SwiftData (локально)</td><td><span class="bg bg-g">Нет</span></td></tr>
+<tr><td>Настройки</td><td>Настройка приложения</td><td>SwiftData (локально)</td><td><span class="bg bg-g">Нет</span></td></tr>
+<tr><td>Ошибки</td><td>Обзор ошибок</td><td>SwiftData (локально)</td><td><span class="bg bg-g">Нет</span></td></tr>
+<tr><td>Статистика</td><td>Дашборд и графики</td><td>SwiftData (локально)</td><td><span class="bg bg-g">Нет</span></td></tr>
+<tr><td>Достижения</td><td>Вехи</td><td>SwiftData (локально)</td><td><span class="bg bg-g">Нет</span></td></tr>
+<tr><td>Статус покупки</td><td>Проверка подписки</td><td>Keychain (устройство)</td><td><span class="bg bg-g">Нет</span></td></tr>
+</tbody></table></div>
+<div class="sec"><h2>3. НЕ собираемые данные</h2><p><span class="bg bg-r">Никакие</span> Не собираем:</p><ul><li>Личные данные (имя, email, телефон, возраст)</li><li>Идентификаторы устройства (IDFA, IDFV)</li><li>Геолокация (GPS, IP)</li><li>Сетевая активность</li><li>Биометрия</li><li>Фото, камера, микрофон, контакты</li><li>Аналитика, краш-логи, телеметрия</li></ul></div>
+<div class="sec"><h2>4. Сеть и сторонние сервисы</h2><div class="hl"><strong>Нулевая сетевая связь.</strong>Никаких HTTP-запросов или API. Контент встроен локально. Звук через AVSpeechSynthesizer.</div><ul><li><strong>Никаких SDK аналитики</strong></li><li><strong>Никаких рекламных SDK</strong></li><li><strong>Никаких краш-репортов</strong></li><li><strong>Никакого соцлогина</strong></li><li><strong>Никаких сторонних зависимостей</strong></li></ul></div>
+<div class="sec"><h2>5. iCloud-бэкап (опционально)</h2><p><span class="bg bg-b">Пользовательский</span> Опциональный iCloud-бэкап:</p><ul><li><strong>Как:</strong>"Бэкап" → данные в вашем iCloud-контейнере</li><li><strong>Не автоматически:</strong>Вручную</li><li><strong>Ваши данные:</strong>Контейнер привязан к Apple ID</li><li><strong>Бэкап:</strong>Прогресс, настройки, ошибки, статистика, достижения</li><li><strong>Не бэкап:</strong>Статус покупки (Keychain)</li></ul></div>
+<div class="sec"><h2>6. Внутриприложенчные покупки</h2><p>Via StoreKit. Оплата Apple — платёжных данных не получаем. Статус в Keychain.</p></div>
+<div class="sec"><h2>7. Разрешения</h2><p>Одно опциональное разрешение:</p>
+<table class="tbl"><thead><tr><th>Разрешение</th><th>Цель</th><th>Обязательно?</th></tr></thead><tbody>
+<tr><td>Уведомления</td><td>Напоминания об учёбе</td><td><span class="bg bg-b">Опционально</span></td></tr>
+</tbody></table><p>Других нет: Геолокация, Камера, Фото, Контакты, Микрофон, Здоровье.</p></div>
+<div class="sec"><h2>8. Хранение и удаление</h2><p>Данные локальные. Удалите:</p><ul><li>Удалением приложения</li><li>Отключением iCloud Drive в настройках</li></ul><p>Нет удалённых серверов.</p></div>
+<div class="sec"><h2>9. Детская конфиденциальность</h2><p>Для всех возрастов. Данных не собираем. Чата/соцсетей нет. Покупки через Apple ID (контроль родителей).</p></div>
+<div class="sec"><h2>10. Изменения</h2><p>Обновления с новой датой. Минимальны и прозрачны.</p></div>
+<div class="sec"><h2>11. Контакты</h2><p>Вопросы?</p><p style="margin-top:8px"><strong>Разработчик:</strong>Hongyue<br><strong>Email:</strong>privacy@hanyu-app.com<br><strong>App Store:</strong>Hanyu — Учите китайский</p></div>
+</div>
+
+<div id="L-hi" style="display:none">
+<div class="hd"><h1>गोपनीयता नीति</h1><div class="sub">Hanyu — चीनी भाषा शिक्षण ऐप</div><div class="app">Bundle ID: com.hongyue.use-hanyu-1.hanyu<br>प्रभावी दिनांक: 27 मई 2026</div></div>
+<div class="sec"><h2>1. अवलोकन</h2><p>Hanyu एक ऑफलाइन चीनी भाषा ऐप है। आपका डेटा आपका है। कोई व्यक्तिगत डेटा संग्रह, प्रसारण या साझाकरण नहीं।</p><div class="hl"><strong>सिद्धांत:</strong> सभी डेटा डिवाइस पर रहता है। शून्य तृतीय-पक्ष SDK, शून्य विश्लेषण, शून्य ट्रैकर, शून्य विज्ञापन।</div></div>
+<div class="sec"><h2>2. संग्रहीत डेटा</h2><p><span class="bg bg-g">न्यूनतम</span> केवल आवश्यक, स्थानीय रूप से:</p>
+<table class="tbl"><thead><tr><th>डेटा</th><th>उद्देश्य</th><th>संग्रह</th><th>साझा?</th></tr></thead><tbody>
+<tr><td>शिक्षण प्रगति</td><td>अंतराल दोहराव</td><td>SwiftData (स्थानीय)</td><td><span class="bg bg-g">नहीं</span></td></tr>
+<tr><td>उपयोगकर्ता प्रेफरेंस</td><td>ऐप कस्टमाइज</td><td>SwiftData (स्थानीय)</td><td><span class="bg bg-g">नहीं</span></td></tr>
+<tr><td>गलती रिकॉर्ड</td><td>गलती समीक्षा</td><td>SwiftData (स्थानीय)</td><td><span class="bg bg-g">नहीं</span></td></tr>
+<tr><td>अध्ययन आँकड़े</td><td>डैशबोर्ड</td><td>SwiftData (स्थानीय)</td><td><span class="bg bg-g">नहीं</span></td></tr>
+<tr><td>उपलब्धियाँ</td><td>मील का पत्थर</td><td>SwiftData (स्थानीय)</td><td><span class="bg bg-g">नहीं</span></td></tr>
+<tr><td>खरीद स्थिति</td><td>मेंबरशिप</td><td>Keychain (डिवाइस)</td><td><span class="bg bg-g">नहीं</span></td></tr>
+</tbody></table></div>
+<div class="sec"><h2>3. असंग्रहीत डेटा</h2><p><span class="bg bg-r">शून्य</span> कभी संग्रह नहीं:</p><ul><li>व्यक्तिगत पहचान</li><li>डिवाइस ID</li><li>स्थान डेटा</li><li>नेटवर्क गतिविधि</li><li>बायोमेट्रिक डेटा</li><li>फोटो, कैमरा, मिक्रोफोन, संपर्क</li><li>विश्लेषण, क्रैश लॉग</li></ul></div>
+<div class="sec"><h2>4. नेटवर्क & तृतीय-पक्ष</h2><div class="hl"><strong>शून्य नेटवर्क.</strong>HTTP/API नहीं। कंटेंट एम्बेडेड। ऑडियो AVSpeechSynthesizer.</div><ul><li><strong>विश्लेषण SDK नहीं</strong></li><li><strong>विज्ञापन SDK नहीं</strong></li><li><strong>क्रैश रिपोर्ट नहीं</strong></li><li><strong>सोशल लॉगिन नहीं</strong></li><li><strong>तृतीय-पक्ष निर्भरता नहीं</strong></li></ul></div>
+<div class="sec"><h2>5. iCloud बैकअप (वैकल्पिक)</h2><p><span class="bg bg-b">उपयोगकर्ता-प्रेरित</span> वैकल्पिक बैकअप:</p><ul><li><strong>कैसे:</strong>"बैकअप"→iCloud कंटेनर में</li><li><strong>स्वतः नहीं:</strong>मैन्युअल</li><li><strong>आपका डेटा:</strong>Apple ID से जुड़ा</li><li><strong>बैकअप:</strong>प्रगति, प्रेफरेंस, गलतियाँ, आँकड़े, उपलब्धियाँ</li><li><strong>नहीं:</strong>खरीद स्थिति (Keychain)</li></ul></div>
+<div class="sec"><h2>6. इन-ऐप खरीद</h2><p>StoreKit via Apple। भुगतान Apple द्वारा। Keychain में स्थिति।</p></div>
+<div class="sec"><h2>7. अनुमतियाँ</h2><p>एक वैकल्पिक अनुमति:</p>
+<table class="tbl"><thead><tr><th>अनुमति</th><th>उद्देश्य</th><th>आवश्यक?</th></tr></thead><tbody>
+<tr><td>सूचनाएँ</td><td>अध्ययन रिमाइंडर</td><td><span class="bg bg-b">वैकल्पिक</span></td></tr>
+</tbody></table><p>अन्य अनुमतियाँ नहीं।</p></div>
+<div class="sec"><h2>8. डेटा हटाना</h2><p>स्थानीय डेटा। हटाएँ:</p><ul><li>ऐप हटाना</li><li>iCloud Drive अक्षम</li></ul><p>रिमोट सर्वर नहीं।</p></div>
+<div class="sec"><h2>9. बाल गोपनीयता</h2><p>सभी आयु। डेटा संग्रह नहीं। चैट/सोशल नहीं। खरीद Apple ID (अभिभावक)।</p></div>
+<div class="sec"><h2>10. परिवर्तन</h2><p>अपडेट नई दिनांक। न्यूनतम और पारदर्शी।</p></div>
+<div class="sec"><h2>11. संपर्क</h2><p>प्रश्न?</p><p style="margin-top:8px"><strong>विकासकर्ता:</strong>Hongyue<br><strong>ईमेल:</strong>privacy@hanyu-app.com<br><strong>App Store:</strong>Hanyu — चीनी सीखें</p></div>
+</div>
+
+<div id="L-th" style="display:none">
+<div class="hd"><h1>นโยบายความเป็นส่วนตัว</h1><div class="sub">Hanyu — แอปเรียนภาษาจีน</div><div class="app">Bundle ID: com.hongyue.use-hanyu-1.hanyu<br>วันที่มีผล: 27 พฤษภาคม 2026</div></div>
+<div class="sec"><h2>1. ภาพรวม</h2><p>Hanyu เป็นแอปเรียนภาษาจีนออฟไลน์ ข้อมูลของคุณเป็นของคุณ ไม่เก็บ ส่ง หรือแชร์ข้อมูลส่วนตัว</p><div class="hl"><strong>หลัก:</strong> ข้อมูลทั้งหมดอยู่บนเครื่อง 0 SDK ภายนอก, 0 analytics, 0 tracker, 0 โฆษณา</div></div>
+<div class="sec"><h2>2. ข้อมูลที่เก็บ</h2><p><span class="bg bg-g">น้อยสุด</span> เก็บเฉพาะข้อมูลจำเป็น บนเครื่อง:</p>
+<table class="tbl"><thead><tr><th>ข้อมูล</th><th>วัตถุประสงค์</th><th>เก็บ</th><th>แชร์?</th></tr></thead><tbody>
+<tr><td>ความก้าวหน้า</td><td>SRS & tracking</td><td>SwiftData(เครื่อง)</td><td><span class="bg bg-g">ไม่</span></td></tr>
+<tr><td>การตั้งค่า</td><td>ปรับแอป</td><td>SwiftData(เครื่อง)</td><td><span class="bg bg-g">ไม่</span></td></tr>
+<tr><td>ข้อผิดพลาด</td><td>ทบทวน</td><td>SwiftData(เครื่อง)</td><td><span class="bg bg-g">ไม่</span></td></tr>
+<tr><td>สถิติ</td><td>แดชบอร์ด</td><td>SwiftData(เครื่อง)</td><td><span class="bg bg-g">ไม่</span></td></tr>
+<tr><td>ความสำเร็จ</td><td>เป้าหมาย</td><td>SwiftData(เครื่อง)</td><td><span class="bg bg-g">ไม่</span></td></tr>
+<tr><td>สถานะซื้อ</td><td>สมาชิก</td><td>Keychain(เครื่อง)</td><td><span class="bg bg-g">ไม่</span></td></tr>
+</tbody></table></div>
+<div class="sec"><h2>3. ข้อมูลที่ไม่เก็บ</h2><p><span class="bg bg-r">ไม่มี</span> ไม่เก็บ:</p><ul><li>ข้อมูลส่วนตัว</li><li>ID อุปกรณ์</li><li>ตำแหน่ง</li><li>กิจกรรมเน็ต</li><li>ข้อมูลไบโอเมตริก</li><li>รูป กล้อง ไมค์ รายชื่อ</li><li>analytics crash logs</li></ul></div>
+<div class="sec"><h2>4. เน็ต & ภายนอก</h2><div class="hl"><strong>0 การเชื่อมต่อเน็ต.</strong>ไม่มี HTTP/API ข้อมูลฝังในแอป เสียงผ่าน AVSpeechSynthesizer</div><ul><li><strong>ไม่มี analytics SDK</strong></li><li><strong>ไม่มี ad SDK</strong></li><li><strong>ไม่มี crash report</strong></li><li><strong>ไม่มี social login</strong></li><li><strong>ไม่มี dependency ภายนอก</strong></li></ul></div>
+<div class="sec"><h2>5. iCloud backup (เลือก)</h2><p><span class="bg bg-b">ผู้ใช้เริ่ม</span> Backup เลือก:</p><ul><li><strong>วิธี:</strong>"Backup"→iCloud container</li><li><strong>ไม่อัตโน:</strong>ทำเอง</li><li><strong>ของคุณ:</strong>ผูก Apple ID</li><li><strong>Backup:</strong>ความก้าวหน้า การตั้งค่า ข้อผิดพลาด สถิติ ความสำเร็จ</li><li><strong>ไม่:</strong>สถานะซื้อ(Keychain)</li></ul></div>
+<div class="sec"><h2>6. ซื้อในแอป</h2><p>ผ่าน StoreKit Apple จ่ายเงินโดย Apple — ไม่รับข้อมูลการจ่าย สถานะใน Keychain</p></div>
+<div class="sec"><h2>7. สิทธิ์</h2><p>1 สิทธิ์เลือก:</p>
+<table class="tbl"><thead><tr><th>สิทธิ์</th><th>วัตถุประสงค์</th><th>จำเป็น?</th></tr></thead><tbody>
+<tr><td>การแจ้งเตือน</td><td>เตือนเรียน</td><td><span class="bg bg-b">เลือก</span></td></tr>
+</tbody></table><p>ไม่มีสิทธิ์อื่น</p></div>
+<div class="sec"><h2>8. เก็บ & ลบ</h2><p>ข้อมูลเครื่อง ลบ:</p><ul><li>ลบแอป</li><li>ปิด iCloud Drive</li></ul><p>ไม่มีเซิร์ฟเวอร์</p></div>
+<div class="sec"><h2>9. เด็ก</h2><p>ทุกวัย ไม่เก็บข้อมูล ไม่มี chat/social ซื้อผ่าน Apple ID(ผู้ปกครอง)</p></div>
+<div class="sec"><h2>10. เปลี่ยน</h2><p>อัปเดตวันใหม่ น้อยและโปร่งใส</p></div>
+<div class="sec"><h2>11. ติดต่อ</h2><p>คำถาม?</p><p style="margin-top:8px"><strong>ผู้พัฒนา:</strong>Hongyue<br><strong>อีเมล:</strong>privacy@hanyu-app.com<br><strong>App Store:</strong>Hanyu — เรียนภาษาจีน</p></div>
+</div>
+
+<div id="L-vi" style="display:none">
+<div class="hd"><h1>Chính sách Bảo mật</h1><div class="sub">Hanyu — App học tiếng Trung</div><div class="app">Bundle ID: com.hongyue.use-hanyu-1.hanyu<br>Ngày: 27 tháng 5, 2026</div></div>
+<div class="sec"><h2>1. Tổng quan</h2><p>Hanyu là app học tiếng Trung offline. Dữ liệu của bạn thuộc về bạn. Không thu thập, truyền hay chia sẻ dữ liệu cá nhân.</p><div class="hl"><strong>Nguyên tắc:</strong> Tất cả dữ liệu trên thiết bị. 0 SDK bên ngoài, 0 analytics, 0 tracker, 0 quảng cáo.</div></div>
+<div class="sec"><h2>2. Dữ liệu thu thập</h2><p><span class="bg bg-g">Tối thiểu</span> Chỉ dữ liệu cần thiết, lưu cục bộ:</p>
+<table class="tbl"><thead><tr><th>Dữ liệu</th><th>Mục đích</th><th>Lưu trữ</th><th>Chia sẻ?</th></tr></thead><tbody>
+<tr><td>Tiến trình học</td><td>SRS & theo dõi</td><td>SwiftData(cục bộ)</td><td><span class="bg bg-g">Không</span></td></tr>
+<tr><td>Cài đặt</td><td>Tùy chỉnh</td><td>SwiftData(cục bộ)</td><td><span class="bg bg-g">Không</span></td></tr>
+<tr><td>Lỗi</td><td>Ôn lỗi</td><td>SwiftData(cục bộ)</td><td><span class="bg bg-g">Không</span></td></tr>
+<tr><td>Thống kê</td><td>Bảng & biểu đồ</td><td>SwiftData(cục bộ)</td><td><span class="bg bg-g">Không</span></td></tr>
+<tr><td>Thành tích</td><td>Cột mốc</td><td>SwiftData(cục bộ)</td><td><span class="bg bg-g">Không</span></td></tr>
+<tr><td>Trạng thái mua</td><td>Xác minh thành viên</td><td>Keychain(máy)</td><td><span class="bg bg-g">Không</span></td></tr>
+</tbody></table></div>
+<div class="sec"><h2>3. KHÔNG thu thập</h2><p><span class="bg bg-r">Không</span> Không thu:</p><ul><li>Thông tin cá nhân</li><li>ID thiết bị</li><li>Vị trí</li><li>Hoạt động mạng</li><li>Dữ liệu sinh trắc</li><li>Ảnh, camera, mic, danh bạ</li><li>Analytics, crash log</li></ul></div>
+<div class="sec"><h2>4. Mạng & bên thứ 3</h2><div class="hl"><strong>0 kết nối mạng.</strong>Không HTTP/API. Nội dung nội bộ. Audio qua AVSpeechSynthesizer.</div><ul><li><strong>Không analytics SDK</strong></li><li><strong>Không ad SDK</strong></li><li><strong>Không crash report</strong></li><li><strong>Không social login</strong></li><li><strong>Không dependency bên ngoài</strong></li></ul></div>
+<div class="sec"><h2>5. iCloud backup (Tuỳ chọn)</h2><p><span class="bg bg-b">Người dùng chủ động</span> Backup tuỳ chọn:</p><ul><li><strong>Cách:</strong>"Backup"→iCloud container</li><li><strong>Không tự động:</strong>Thủ công</li><li><strong>Dữ liệu bạn:</strong>Container gắn Apple ID</li><li><strong>Backup:</strong>Tiến trình, cài đặt, lỗi, thống kê, thành tích</li><li><strong>Không:</strong>Trạng thái mua(Keychain)</li></ul></div>
+<div class="sec"><h2>6. Mua trong app</h2><p>Via StoreKit Apple. Thanh toán bởi Apple — không nhận thông tin. Trạng thái Keychain.</p></div>
+<div class="sec"><h2>7. Quyền</h2><p>1 quyền tuỳ chọn:</p>
+<table class="tbl"><thead><tr><th>Quyền</th><th>Mục đích</th><th>Yêu cầu?</th></tr></thead><tbody>
+<tr><td>Thông báo</td><td>Nhắc học</td><td><span class="bg bg-b">Tuỳ chọn</span></td></tr>
+</tbody></table><p>Không quyền khác.</p></div>
+<div class="sec"><h2>8. Giữ & xoá</h2><p>Dữ liệu cục bộ. Xoá:</p><ul><li>Xoá app</li><li>Tắt iCloud Drive</li></ul><p>Không server.</p></div>
+<div class="sec"><h2>9. Trẻ em</h2><p>Mọi lứa tuổi. Không thu thập. Không chat/social. Mua qua Apple ID(phụ huynh).</p></div>
+<div class="sec"><h2>10. Thay đổi</h2><p>Cập nhật ngày mới. Tối thiểu & minh bạch.</p></div>
+<div class="sec"><h2>11. Liên hệ</h2><p>Câu hỏi?</p><p style="margin-top:8px"><strong>Phát triển:</strong>Hongyue<br><strong>Email:</strong>privacy@hanyu-app.com<br><strong>App Store:</strong>Hanyu — Học tiếng Trung</p></div>
+</div>
+
+<div id="L-it" style="display:none">
+<div class="hd"><h1>Informativa sulla Privacy</h1><div class="sub">Hanyu — App per imparare il cinese</div><div class="app">Bundle ID: com.hongyue.use-hanyu-1.hanyu<br>Data: 27 maggio 2026</div></div>
+<div class="sec"><h2>1. Panoramica</h2><p>Hanyu è un'app offline per imparare il cinese. I tuoi dati sono solo tuoi. Nessuna raccolta, trasmissione o condivisione di dati personali.</p><div class="hl"><strong>Principio:</strong> Tutti i dati restano sul dispositivo. Zero SDK terzi, zero analytics, zero tracker, zero annunci.</div></div>
+<div class="sec"><h2>2. Dati raccolti</h2><p><span class="bg bg-g">Minimo</span> Solo dati necessari, archiviati localmente:</p>
+<table class="tbl"><thead><tr><th>Dati</th><th>Scopo</th><th>Archivio</th><th>Condivisi?</th></tr></thead><tbody>
+<tr><td>Progresso</td><td>Ripetizione spaziata</td><td>SwiftData locale</td><td><span class="bg bg-g">No</span></td></tr>
+<tr><td>Preferenze</td><td>Personalizzazione</td><td>SwiftData locale</td><td><span class="bg bg-g">No</span></td></tr>
+<tr><td>Errori</td><td>Ripasso errori</td><td>SwiftData locale</td><td><span class="bg bg-g">No</span></td></tr>
+<tr><td>Statistiche</td><td>Dashboard</td><td>SwiftData locale</td><td><span class="bg bg-g">No</span></td></tr>
+<tr><td>Achievement</td><td>Traguardi</td><td>SwiftData locale</td><td><span class="bg bg-g">No</span></td></tr>
+<tr><td>Stato acquisto</td><td>Verifica membro</td><td>Keychain (dispositivo)</td><td><span class="bg bg-g">No</span></td></tr>
+</tbody></table></div>
+<div class="sec"><h2>3. Dati NON raccolti</h2><p><span class="bg bg-r">Nessuno</span> Mai raccolti:</p><ul><li>Identità personale</li><li>ID dispositivo</li><li>Posizione</li><li>Attività rete</li><li>Dati biometrici</li><li>Foto, camera, micro, contatti</li><li>Analytics, crash logs</li></ul></div>
+<div class="sec"><h2>4. Rete & servizi terzi</h2><div class="hl"><strong>Zero connettività.</strong>Nessuna HTTP/API. Contenuto locale. Audio via AVSpeechSynthesizer.</div><ul><li><strong>Nessun SDK analytics</strong></li><li><strong>Nessun SDK ad</strong></li><li><strong>Nessun crash report</strong></li><li><strong>Nessun social login</strong></li><li><strong>Nessuna dipendenza terza</strong></li></ul></div>
+<div class="sec"><h2>5. Backup iCloud (Opzionale)</h2><p><span class="bg bg-b">Avviato dall'utente</span> Backup opzionale:</p><ul><li><strong>Come:</strong>"Backup"→container iCloud</li><li><strong>Non automatico:</strong>Manuale</li><li><strong>I tuoi dati:</strong>Container legato ad Apple ID</li><li><strong>Backup:</strong>Progresso, preferenze, errori, stats, achievements</li><li><strong>Non:</strong>Stato acquisto(Keychain)</li></ul></div>
+<div class="sec"><h2>6. Acquisti in-app</h2><p>Via StoreKit Apple. Pagamento Apple — nessuna info ricevuta. Stato in Keychain.</p></div>
+<div class="sec"><h2>7. Permessi</h2><p>Un permesso opzionale:</p>
+<table class="tbl"><thead><tr><th>Permesso</th><th>Scopo</th><th>Necessario?</th></tr></thead><tbody>
+<tr><td>Notifiche</td><td>Rimandi studio</td><td><span class="bg bg-b">Opzionale</span></td></tr>
+</tbody></table><p>Nessun altro permesso.</p></div>
+<div class="sec"><h2>8. Conservazione & cancellazione</h2><p>Dati locali. Cancella:</p><ul><li>Rimuovere l'app</li><li>Disattivare iCloud Drive</li></ul><p>Nessun server remoto.</p></div>
+<div class="sec"><h2>9. Privacy minori</h2><p>Tutte le età. Nessuna raccolta. Nessun chat/social. Acquisti via Apple ID(genitori).</p></div>
+<div class="sec"><h2>10. Modifiche</h2><p>Aggiornamenti con nuova data. Minimal e trasparenti.</p></div>
+<div class="sec"><h2>11. Contatto</h2><p>Domande?</p><p style="margin-top:8px"><strong>Sviluppatore:</strong>Hongyue<br><strong>Email:</strong>privacy@hanyu-app.com<br><strong>App Store:</strong>Hanyu — Impara il cinese</p></div>
+</div>
+
+<div class="ft">&copy; 2026 Hongyue. All rights reserved.<br>Hanyu — Learn Chinese</div>
+
+<script>
+var langs=['en','zh','es','fr','ar','pt','de','ja','ko','ru','hi','th','vi','it'];
+function sw(l){langs.forEach(function(x){var e=document.getElementById('L-'+x);if(e)e.style.display=x===l?'block':'none';});var btns=document.querySelectorAll('.lsel a');btns.forEach(function(a){a.classList.remove('act');});var i=langs.indexOf(l);if(i>=0&&btns[i])btns[i].classList.add('act');}
+</script>
+</div>
+</body>
+</html>
