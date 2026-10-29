@@ -108,6 +108,35 @@
             font-size: 13px;
             margin-top: 40px;
         }
+        /* ===== Language switcher ===== */
+        .lang-switch {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 32px;
+        }
+        .lang-switch button {
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: #424245;
+            background: #f5f5f7;
+            border: 1px solid #e5e5ea;
+            border-radius: 999px;
+            padding: 6px 14px;
+            cursor: pointer;
+            transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+        }
+        .lang-switch button:hover { background: #e8e8ed; }
+        .lang-switch button.active {
+            background: #1d1d1f;
+            color: #fff;
+            border-color: #1d1d1f;
+        }
+        .lang-content { display: none; }
+        .lang-content.active { display: block; }
         @media (max-width: 600px) {
             body { padding: 0; }
             .container {
@@ -118,83 +147,441 @@
             h1 { font-size: 24px; }
             h2 { font-size: 16px; }
             .subtitle { font-size: 14px; }
+            .lang-switch { gap: 6px; margin-bottom: 24px; }
+            .lang-switch button { font-size: 12px; padding: 5px 11px; }
         }
     </style>
 </head>
 <body>
 <div class="container">
 
-<h1>隐私政策</h1>
-<p class="subtitle">GitNote — 基于 GitHub 的 Markdown 笔记应用</p>
-<p class="app-info">生效日期：2026年10月28日</p>
-<hr class="divider">
+    <div class="lang-switch" role="tablist" aria-label="Language">
+        <button type="button" role="tab" data-lang="zh" aria-selected="true">中文</button>
+        <button type="button" role="tab" data-lang="en" aria-selected="false">English</button>
+        <button type="button" role="tab" data-lang="ja" aria-selected="false">日本語</button>
+        <button type="button" role="tab" data-lang="fr" aria-selected="false">Français</button>
+        <button type="button" role="tab" data-lang="ko" aria-selected="false">한국어</button>
+    </div>
 
-<h2>1. 概述</h2>
-<p>GitNote 是一款基于 GitHub 的本地优先 Markdown 笔记应用。你的笔记与数据只属于你自己。本应用<strong>不收集、不上传、不出售任何用户个人信息</strong>，我们没有自己的服务器，也不设任何后台数据库。你的笔记以 Markdown 文件形式保存在你自己的 GitHub 仓库中，账户信息通过 iCloud 在你的设备之间同步。</p>
-<div class="hl"><strong>核心原则：</strong>零数据收集、零分析追踪、零广告、零第三方 SDK。所有数据仅在「你的设备 ↔ GitHub ↔ Apple iCloud」之间直接流动，绝不经过开发者的任何服务器。</div>
+    <!-- ===================== 中文 ===================== -->
+    <div class="lang-content active" data-lang="zh">
+        <h1>隐私政策</h1>
+        <p class="subtitle">GitNote — 基于 GitHub 的 Markdown 笔记应用</p>
+        <p class="app-info">生效日期：2026年10月28日</p>
+        <hr class="divider">
 
-<h2>2. 数据的存储与流向</h2>
-<p><span class="bg bg-b">本地优先</span> 你的数据由你掌控，分布在以下三处，均不受开发者控制：</p>
-<div class="data-item"><span class="data-name">笔记内容</span><div class="data-detail">Markdown 文件 · 存储在你自己的 GitHub 仓库与设备本地</div></div>
-<div class="data-item"><span class="data-name">GitHub 账户信息</span><div class="data-detail">登录凭证 / 访问令牌 · 通过 iCloud 在你的多台设备间同步</div></div>
-<div class="data-item"><span class="data-name">应用设置与偏好</span><div class="data-detail">本地存储 · 保存在你的设备上</div></div>
+        <h2>1. 概述</h2>
+        <p>GitNote 是一款基于 GitHub 的本地优先 Markdown 笔记应用。你的笔记与数据只属于你自己。本应用<strong>不收集、不上传、不出售任何用户个人信息</strong>，我们没有自己的服务器，也不设任何后台数据库。你的笔记以 Markdown 文件形式保存在你自己的 GitHub 仓库中，账户信息通过 iCloud 在你的设备之间同步。</p>
+        <div class="hl"><strong>核心原则：</strong>零数据收集、零分析追踪、零广告、零第三方 SDK。所有数据仅在「你的设备 ↔ GitHub ↔ Apple iCloud」之间直接流动，绝不经过开发者的任何服务器。</div>
 
-<h2>3. 不收集的数据</h2>
-<p><span class="bg bg-r">无</span> 开发者从不收集、也无法访问以下任何数据：</p>
-<ul>
-<li>个人身份信息（姓名、邮箱、电话、年龄、性别）</li>
-<li>设备标识符（IDFA、IDFV、广告标识符）</li>
-<li>位置数据（GPS、IP 定位）</li>
-<li>通讯录、照片、相机、麦克风</li>
-<li>分析数据、崩溃日志、行为遥测</li>
-<li>你的笔记内容与 GitHub 凭证</li>
-</ul>
+        <h2>2. 数据的存储与流向</h2>
+        <p><span class="bg bg-b">本地优先</span> 你的数据由你掌控，分布在以下三处，均不受开发者控制：</p>
+        <div class="data-item"><span class="data-name">笔记内容</span><div class="data-detail">Markdown 文件 · 存储在你自己的 GitHub 仓库与设备本地</div></div>
+        <div class="data-item"><span class="data-name">GitHub 账户信息</span><div class="data-detail">登录凭证 / 访问令牌 · 通过 iCloud 在你的多台设备间同步</div></div>
+        <div class="data-item"><span class="data-name">应用设置与偏好</span><div class="data-detail">本地存储 · 保存在你的设备上</div></div>
 
-<h2>4. iCloud 同步</h2>
-<div class="hl"><strong>仅用于同步账户信息。</strong>GitNote 使用 Apple 提供的 iCloud（CloudKit / iCloud 钥匙串）在你的多台设备之间同步 GitHub 账户登录信息，以便你无需重复登录。该同步完全由 Apple 的基础设施处理并端到端保护，开发者无法访问、读取或控制其中的任何内容。</div>
-<p>你可以随时在 iOS「设置 — Apple ID — iCloud」中关闭 iCloud 同步，或在应用内退出登录以清除已同步的账户信息。</p>
+        <h2>3. 不收集的数据</h2>
+        <p><span class="bg bg-r">无</span> 开发者从不收集、也无法访问以下任何数据：</p>
+        <ul>
+            <li>个人身份信息（姓名、邮箱、电话、年龄、性别）</li>
+            <li>设备标识符（IDFA、IDFV、广告标识符）</li>
+            <li>位置数据（GPS、IP 定位）</li>
+            <li>通讯录、照片、相机、麦克风</li>
+            <li>分析数据、崩溃日志、行为遥测</li>
+            <li>你的笔记内容与 GitHub 凭证</li>
+        </ul>
 
-<h2>5. GitHub 说明</h2>
-<p>GitNote 通过 GitHub 官方 API 读写你自己的笔记仓库。所有请求均由你的设备直接发往 GitHub，不经过任何中间服务器。你与 GitHub 之间的数据交互受 <strong>GitHub 自身隐私政策</strong>约束，建议你查阅 GitHub 的隐私条款以了解其数据处理方式。开发者不会获取、存储或分析你的 GitHub 账户、仓库或笔记内容。</p>
+        <h2>4. iCloud 同步</h2>
+        <div class="hl"><strong>仅用于同步账户信息。</strong>GitNote 使用 Apple 提供的 iCloud（CloudKit / iCloud 钥匙串）在你的多台设备之间同步 GitHub 账户登录信息，以便你无需重复登录。该同步完全由 Apple 的基础设施处理并端到端保护，开发者无法访问、读取或控制其中的任何内容。</div>
+        <p>你可以随时在 iOS「设置 — Apple ID — iCloud」中关闭 iCloud 同步，或在应用内退出登录以清除已同步的账户信息。</p>
 
-<h2>6. 网络与第三方</h2>
-<ul>
-<li><strong>无自有服务器</strong> — 开发者不运营任何后台或数据库</li>
-<li><strong>无分析 SDK</strong> — 无 Firebase、Mixpanel、友盟等</li>
-<li><strong>无广告 SDK</strong> — 不含任何广告框架或广告追踪器</li>
-<li><strong>无崩溃上报</strong> — 不向任何监控服务发送数据</li>
-<li><strong>无社交登录</strong> — 不含 Facebook、Google 等第三方认证</li>
-<li><strong>有限的第三方服务</strong> — 仅使用 GitHub（笔记存储）与 Apple iCloud（账户同步），二者均直接由你的设备访问</li>
-</ul>
+        <h2>5. GitHub 说明</h2>
+        <p>GitNote 通过 GitHub 官方 API 读写你自己的笔记仓库。所有请求均由你的设备直接发往 GitHub，不经过任何中间服务器。你与 GitHub 之间的数据交互受 <strong>GitHub 自身隐私政策</strong>约束，建议你查阅 GitHub 的隐私条款以了解其数据处理方式。开发者不会获取、存储或分析你的 GitHub 账户、仓库或笔记内容。</p>
 
-<h2>7. 权限</h2>
-<div class="hl"><strong>最小权限。</strong>GitNote 仅请求实现核心功能所必需的能力，如网络访问（用于连接 GitHub）与 iCloud（用于同步账户信息）。应用不会请求位置、相机、麦克风、通讯录、照片等与笔记功能无关的权限。</div>
+        <h2>6. 网络与第三方</h2>
+        <ul>
+            <li><strong>无自有服务器</strong> — 开发者不运营任何后台或数据库</li>
+            <li><strong>无分析 SDK</strong> — 无 Firebase、Mixpanel、友盟等</li>
+            <li><strong>无广告 SDK</strong> — 不含任何广告框架或广告追踪器</li>
+            <li><strong>无崩溃上报</strong> — 不向任何监控服务发送数据</li>
+            <li><strong>无社交登录</strong> — 不含 Facebook、Google 等第三方认证</li>
+            <li><strong>有限的第三方服务</strong> — 仅使用 GitHub（笔记存储）与 Apple iCloud（账户同步），二者均直接由你的设备访问</li>
+        </ul>
 
-<h2>8. 数据保留与删除</h2>
-<p>你的数据完全由你掌控，可通过以下方式彻底删除：</p>
-<ul>
-<li>在应用内退出登录 — 清除本地及 iCloud 中同步的 GitHub 账户信息</li>
-<li>删除 GitHub 仓库中的笔记文件 — 从源头移除你的笔记内容</li>
-<li>删除应用 — 移除设备上的所有本地数据</li>
-</ul>
-<p>由于开发者不持有任何你的数据副本，删除操作无需联系我们即可完成。</p>
+        <h2>7. 权限</h2>
+        <div class="hl"><strong>最小权限。</strong>GitNote 仅请求实现核心功能所必需的能力，如网络访问（用于连接 GitHub）与 iCloud（用于同步账户信息）。应用不会请求位置、相机、麦克风、通讯录、照片等与笔记功能无关的权限。</div>
 
-<h2>9. 数据安全</h2>
-<p>你的笔记与账户信息的安全性由 GitHub、Apple iCloud 以及你的设备系统共同保障。数据传输过程使用行业标准加密（如 HTTPS / TLS）。由于开发者不存储任何数据，我们不成为你数据的持有方或风险点。</p>
+        <h2>8. 数据保留与删除</h2>
+        <p>你的数据完全由你掌控，可通过以下方式彻底删除：</p>
+        <ul>
+            <li>在应用内退出登录 — 清除本地及 iCloud 中同步的 GitHub 账户信息</li>
+            <li>删除 GitHub 仓库中的笔记文件 — 从源头移除你的笔记内容</li>
+            <li>删除应用 — 移除设备上的所有本地数据</li>
+        </ul>
+        <p>由于开发者不持有任何你的数据副本，删除操作无需联系我们即可完成。</p>
 
-<h2>10. 儿童隐私</h2>
-<p>本应用不针对 13 岁以下儿童设计，我们不会故意收集任何用户（包括儿童）的个人信息。使用本应用需要你自己的 GitHub 账户，并受相应服务条款约束。</p>
+        <h2>9. 数据安全</h2>
+        <p>你的笔记与账户信息的安全性由 GitHub、Apple iCloud 以及你的设备系统共同保障。数据传输过程使用行业标准加密（如 HTTPS / TLS）。由于开发者不存储任何数据，我们不成为你数据的持有方或风险点。</p>
 
-<h2>11. 隐私政策变更</h2>
-<p>如数据处理方式发生变更，我们将更新此政策并标注新的生效日期。鉴于本应用「零数据收集」的架构，未来的变更将保持最小化且透明。</p>
+        <h2>10. 儿童隐私</h2>
+        <p>本应用不针对 13 岁以下儿童设计，我们不会故意收集任何用户（包括儿童）的个人信息。使用本应用需要你自己的 GitHub 账户，并受相应服务条款约束。</p>
 
-<h2>12. 联系方式</h2>
-<p>如对本隐私政策有任何疑问或建议，请联系：</p>
-<p style="margin-top:8px"><strong>开发者：</strong>Hongyue<br><strong>邮箱：</strong>2421155310@qq.com<br><strong>App Store：</strong>GitNote</p>
+        <h2>11. 隐私政策变更</h2>
+        <p>如数据处理方式发生变更，我们将更新此政策并标注新的生效日期。鉴于本应用「零数据收集」的架构，未来的变更将保持最小化且透明。</p>
 
-<hr class="divider">
-<p class="footer">&copy; 2026 Hongyue. All rights reserved.<br>GitNote — 基于 GitHub 的 Markdown 笔记应用</p>
+        <h2>12. 联系方式</h2>
+        <p>如对本隐私政策有任何疑问或建议，请联系：</p>
+        <p style="margin-top:8px"><strong>开发者：</strong>Hongyue<br><strong>邮箱：</strong>2421155310@qq.com<br><strong>App Store：</strong>GitNote</p>
+
+        <hr class="divider">
+        <p class="footer">&copy; 2026 Hongyue. All rights reserved.<br>GitNote — 基于 GitHub 的 Markdown 笔记应用</p>
+    </div>
+
+    <!-- ===================== English ===================== -->
+    <div class="lang-content" data-lang="en">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">GitNote — A GitHub-based Markdown notes app</p>
+        <p class="app-info">Effective Date: October 28, 2026</p>
+        <hr class="divider">
+
+        <h2>1. Overview</h2>
+        <p>GitNote is a local-first, GitHub-based Markdown notes app. Your notes and data belong to you alone. This app <strong>does not collect, upload, or sell any personal information</strong>. We operate no servers of our own and maintain no backend database. Your notes are saved as Markdown files in your own GitHub repository, and your account information is synced across your devices via iCloud.</p>
+        <div class="hl"><strong>Core principle:</strong> Zero data collection, zero analytics tracking, zero ads, zero third-party SDKs. All data flows directly between "your device ↔ GitHub ↔ Apple iCloud" and never passes through any developer server.</div>
+
+        <h2>2. Data Storage &amp; Flow</h2>
+        <p><span class="bg bg-b">Local-first</span> Your data is under your control, distributed across the following three places, none of which the developer controls:</p>
+        <div class="data-item"><span class="data-name">Note content</span><div class="data-detail">Markdown files · Stored in your own GitHub repository and locally on your device</div></div>
+        <div class="data-item"><span class="data-name">GitHub account info</span><div class="data-detail">Login credentials / access tokens · Synced across your devices via iCloud</div></div>
+        <div class="data-item"><span class="data-name">App settings &amp; preferences</span><div class="data-detail">Local storage · Saved on your device</div></div>
+
+        <h2>3. Data We Do Not Collect</h2>
+        <p><span class="bg bg-r">None</span> The developer never collects, and cannot access, any of the following data:</p>
+        <ul>
+            <li>Personal identity information (name, email, phone, age, gender)</li>
+            <li>Device identifiers (IDFA, IDFV, advertising ID)</li>
+            <li>Location data (GPS, IP-based location)</li>
+            <li>Contacts, photos, camera, microphone</li>
+            <li>Analytics data, crash logs, behavioral telemetry</li>
+            <li>Your note content or GitHub credentials</li>
+        </ul>
+
+        <h2>4. iCloud Sync</h2>
+        <div class="hl"><strong>For account sync only.</strong> GitNote uses Apple's iCloud (CloudKit / iCloud Keychain) to sync your GitHub login information across your devices, so you don't have to sign in repeatedly. This sync is handled entirely by Apple's infrastructure with end-to-end protection; the developer cannot access, read, or control any of its contents.</div>
+        <p>You can turn off iCloud sync at any time in iOS "Settings — Apple ID — iCloud", or sign out within the app to clear the synced account information.</p>
+
+        <h2>5. About GitHub</h2>
+        <p>GitNote reads and writes your own notes repository through GitHub's official API. All requests are sent directly from your device to GitHub, without passing through any intermediate server. Data exchanges between you and GitHub are governed by <strong>GitHub's own Privacy Policy</strong>; we recommend reviewing GitHub's privacy terms to understand how it processes data. The developer does not obtain, store, or analyze your GitHub account, repositories, or note content.</p>
+
+        <h2>6. Network &amp; Third Parties</h2>
+        <ul>
+            <li><strong>No self-hosted servers</strong> — The developer operates no backend or database</li>
+            <li><strong>No analytics SDK</strong> — No Firebase, Mixpanel, etc.</li>
+            <li><strong>No ad SDK</strong> — Contains no advertising frameworks or ad trackers</li>
+            <li><strong>No crash reporting</strong> — No data sent to any monitoring service</li>
+            <li><strong>No social login</strong> — No Facebook, Google, or other third-party authentication</li>
+            <li><strong>Limited third-party services</strong> — Only GitHub (note storage) and Apple iCloud (account sync), both accessed directly by your device</li>
+        </ul>
+
+        <h2>7. Permissions</h2>
+        <div class="hl"><strong>Minimal permissions.</strong> GitNote only requests capabilities essential to its core functions, such as network access (to connect to GitHub) and iCloud (to sync account information). The app does not request permissions unrelated to note-taking, such as location, camera, microphone, contacts, or photos.</div>
+
+        <h2>8. Data Retention &amp; Deletion</h2>
+        <p>Your data is entirely under your control and can be completely deleted in the following ways:</p>
+        <ul>
+            <li>Sign out within the app — Clears GitHub account info synced locally and in iCloud</li>
+            <li>Delete note files in your GitHub repository — Removes your note content at the source</li>
+            <li>Delete the app — Removes all local data on your device</li>
+        </ul>
+        <p>Since the developer holds no copies of your data, deletion requires no contact with us.</p>
+
+        <h2>9. Data Security</h2>
+        <p>The security of your notes and account information is jointly safeguarded by GitHub, Apple iCloud, and your device's operating system. Data transmission uses industry-standard encryption (such as HTTPS / TLS). Since the developer stores no data, we are neither a holder of nor a risk point for your data.</p>
+
+        <h2>10. Children's Privacy</h2>
+        <p>This app is not designed for children under 13, and we do not knowingly collect personal information from any user (including children). Using this app requires your own GitHub account and is subject to the corresponding terms of service.</p>
+
+        <h2>11. Changes to This Policy</h2>
+        <p>If our data processing practices change, we will update this policy and note the new effective date. Given the app's "zero data collection" architecture, future changes will remain minimal and transparent.</p>
+
+        <h2>12. Contact</h2>
+        <p>If you have any questions or suggestions about this privacy policy, please contact:</p>
+        <p style="margin-top:8px"><strong>Developer:</strong> Hongyue<br><strong>Email:</strong> 2421155310@qq.com<br><strong>App Store:</strong> GitNote</p>
+
+        <hr class="divider">
+        <p class="footer">&copy; 2026 Hongyue. All rights reserved.<br>GitNote — A GitHub-based Markdown notes app</p>
+    </div>
+
+    <!-- ===================== 日本語 ===================== -->
+    <div class="lang-content" data-lang="ja">
+        <h1>プライバシーポリシー</h1>
+        <p class="subtitle">GitNote — GitHub ベースの Markdown ノートアプリ</p>
+        <p class="app-info">発効日：2026年10月28日</p>
+        <hr class="divider">
+
+        <h2>1. 概要</h2>
+        <p>GitNote は、GitHub をベースとしたローカルファーストの Markdown ノートアプリです。あなたのノートとデータはあなただけのものです。本アプリは<strong>いかなる個人情報も収集・アップロード・販売しません</strong>。私たちは独自のサーバーを持たず、バックエンドのデータベースも設置していません。あなたのノートは Markdown ファイルとしてあなた自身の GitHub リポジトリに保存され、アカウント情報は iCloud を通じてあなたのデバイス間で同期されます。</p>
+        <div class="hl"><strong>基本原則：</strong>データ収集ゼロ、分析トラッキングゼロ、広告ゼロ、サードパーティ SDK ゼロ。すべてのデータは「あなたのデバイス ↔ GitHub ↔ Apple iCloud」の間を直接流れ、開発者のいかなるサーバーも経由しません。</div>
+
+        <h2>2. データの保存と流れ</h2>
+        <p><span class="bg bg-b">ローカルファースト</span> あなたのデータはあなた自身が管理し、以下の3か所に分散しており、いずれも開発者は制御しません：</p>
+        <div class="data-item"><span class="data-name">ノートの内容</span><div class="data-detail">Markdown ファイル · あなた自身の GitHub リポジトリとデバイス内に保存</div></div>
+        <div class="data-item"><span class="data-name">GitHub アカウント情報</span><div class="data-detail">ログイン資格情報 / アクセストークン · iCloud を通じてあなたの複数デバイス間で同期</div></div>
+        <div class="data-item"><span class="data-name">アプリの設定と好み</span><div class="data-detail">ローカル保存 · あなたのデバイスに保存</div></div>
+
+        <h2>3. 収集しないデータ</h2>
+        <p><span class="bg bg-r">なし</span> 開発者は以下のいかなるデータも収集せず、アクセスすることもできません：</p>
+        <ul>
+            <li>個人を特定できる情報（氏名、メール、電話、年齢、性別）</li>
+            <li>デバイス識別子（IDFA、IDFV、広告識別子）</li>
+            <li>位置データ（GPS、IP による位置特定）</li>
+            <li>連絡先、写真、カメラ、マイク</li>
+            <li>分析データ、クラッシュログ、行動テレメトリ</li>
+            <li>あなたのノート内容と GitHub 資格情報</li>
+        </ul>
+
+        <h2>4. iCloud 同期</h2>
+        <div class="hl"><strong>アカウント情報の同期のみに使用。</strong>GitNote は Apple が提供する iCloud（CloudKit / iCloud キーチェーン）を使用して、あなたの複数デバイス間で GitHub アカウントのログイン情報を同期し、再ログインの手間を省きます。この同期は完全に Apple のインフラストラクチャによって処理され、エンドツーエンドで保護されています。開発者はその内容にアクセス、読み取り、制御することができません。</div>
+        <p>iOS の「設定 — Apple ID — iCloud」でいつでも iCloud 同期をオフにできるほか、アプリ内でログアウトして同期済みのアカウント情報を消去できます。</p>
+
+        <h2>5. GitHub について</h2>
+        <p>GitNote は GitHub 公式 API を通じてあなた自身のノートリポジトリを読み書きします。すべてのリクエストはあなたのデバイスから直接 GitHub に送信され、いかなる中間サーバーも経由しません。あなたと GitHub の間のデータやり取りは <strong>GitHub 自身のプライバシーポリシー</strong>に従います。GitHub のデータ処理方法については、GitHub のプライバシー条項をご確認いただくことをお勧めします。開発者はあなたの GitHub アカウント、リポジトリ、ノート内容を取得、保存、分析することはありません。</p>
+
+        <h2>6. ネットワークとサードパーティ</h2>
+        <ul>
+            <li><strong>独自サーバーなし</strong> — 開発者はいかなるバックエンドやデータベースも運営しません</li>
+            <li><strong>分析 SDK なし</strong> — Firebase、Mixpanel などはありません</li>
+            <li><strong>広告 SDK なし</strong> — 広告フレームワークや広告トラッカーを含みません</li>
+            <li><strong>クラッシュ報告なし</strong> — いかなる監視サービスにもデータを送信しません</li>
+            <li><strong>ソーシャルログインなし</strong> — Facebook、Google などのサードパーティ認証を含みません</li>
+            <li><strong>限定的なサードパーティサービス</strong> — GitHub（ノート保存）と Apple iCloud（アカウント同期）のみを使用し、いずれもあなたのデバイスから直接アクセスします</li>
+        </ul>
+
+        <h2>7. 権限</h2>
+        <div class="hl"><strong>最小限の権限。</strong>GitNote は、ネットワークアクセス（GitHub への接続用）や iCloud（アカウント情報の同期用）など、コア機能の実現に不可欠な能力のみを要求します。位置、カメラ、マイク、連絡先、写真など、ノート機能と無関係な権限は要求しません。</div>
+
+        <h2>8. データの保持と削除</h2>
+        <p>あなたのデータは完全にあなた自身が管理し、以下の方法で完全に削除できます：</p>
+        <ul>
+            <li>アプリ内でログアウト — ローカルおよび iCloud に同期された GitHub アカウント情報を消去</li>
+            <li>GitHub リポジトリ内のノートファイルを削除 — ソースからあなたのノート内容を削除</li>
+            <li>アプリを削除 — デバイス上のすべてのローカルデータを削除</li>
+        </ul>
+        <p>開発者はあなたのデータのコピーを一切保持していないため、削除に私たちへの連絡は不要です。</p>
+
+        <h2>9. データセキュリティ</h2>
+        <p>あなたのノートとアカウント情報のセキュリティは、GitHub、Apple iCloud、およびあなたのデバイスシステムによって共同で保護されます。データ転送には業界標準の暗号化（HTTPS / TLS など）を使用します。開発者は一切のデータを保存しないため、あなたのデータの保持者にもリスクポイントにもなりません。</p>
+
+        <h2>10. 子供のプライバシー</h2>
+        <p>本アプリは13歳未満の子供を対象として設計されておらず、いかなるユーザー（子供を含む）の個人情報も意図的に収集しません。本アプリの使用にはあなた自身の GitHub アカウントが必要で、それぞれのサービス条項に従います。</p>
+
+        <h2>11. プライバシーポリシーの変更</h2>
+        <p>データ処理方法に変更が生じた場合、本ポリシーを更新し、新しい発効日を明記します。本アプリの「データ収集ゼロ」というアーキテクチャを踏まえ、将来の変更は最小限かつ透明に保たれます。</p>
+
+        <h2>12. お問い合わせ</h2>
+        <p>本プライバシーポリシーについてご質問やご提案がある場合は、以下までご連絡ください：</p>
+        <p style="margin-top:8px"><strong>開発者：</strong>Hongyue<br><strong>メール：</strong>2421155310@qq.com<br><strong>App Store：</strong>GitNote</p>
+
+        <hr class="divider">
+        <p class="footer">&copy; 2026 Hongyue. All rights reserved.<br>GitNote — GitHub ベースの Markdown ノートアプリ</p>
+    </div>
+
+    <!-- ===================== Français ===================== -->
+    <div class="lang-content" data-lang="fr">
+        <h1>Politique de confidentialité</h1>
+        <p class="subtitle">GitNote — Une application de notes Markdown basée sur GitHub</p>
+        <p class="app-info">Date d'entrée en vigueur : 28 octobre 2026</p>
+        <hr class="divider">
+
+        <h2>1. Aperçu</h2>
+        <p>GitNote est une application de notes Markdown « local-first » basée sur GitHub. Vos notes et vos données vous appartiennent exclusivement. Cette application <strong>ne collecte, ne téléverse ni ne vend aucune information personnelle</strong>. Nous n'exploitons aucun serveur propre et ne disposons d'aucune base de données backend. Vos notes sont enregistrées sous forme de fichiers Markdown dans votre propre dépôt GitHub, et les informations de votre compte sont synchronisées entre vos appareils via iCloud.</p>
+        <div class="hl"><strong>Principe fondamental :</strong> zéro collecte de données, zéro suivi analytique, zéro publicité, zéro SDK tiers. Toutes les données circulent directement entre « votre appareil ↔ GitHub ↔ Apple iCloud » et ne transitent jamais par un serveur du développeur.</div>
+
+        <h2>2. Stockage et flux des données</h2>
+        <p><span class="bg bg-b">Local-first</span> Vos données sont sous votre contrôle, réparties aux trois endroits suivants, dont aucun n'est contrôlé par le développeur :</p>
+        <div class="data-item"><span class="data-name">Contenu des notes</span><div class="data-detail">Fichiers Markdown · Stockés dans votre propre dépôt GitHub et localement sur votre appareil</div></div>
+        <div class="data-item"><span class="data-name">Informations du compte GitHub</span><div class="data-detail">Identifiants de connexion / jetons d'accès · Synchronisés entre vos appareils via iCloud</div></div>
+        <div class="data-item"><span class="data-name">Paramètres et préférences</span><div class="data-detail">Stockage local · Enregistrés sur votre appareil</div></div>
+
+        <h2>3. Données non collectées</h2>
+        <p><span class="bg bg-r">Aucune</span> Le développeur ne collecte jamais, et ne peut accéder, à aucune des données suivantes :</p>
+        <ul>
+            <li>Informations d'identité personnelle (nom, e-mail, téléphone, âge, sexe)</li>
+            <li>Identifiants d'appareil (IDFA, IDFV, identifiant publicitaire)</li>
+            <li>Données de localisation (GPS, localisation par IP)</li>
+            <li>Contacts, photos, appareil photo, microphone</li>
+            <li>Données analytiques, journaux de plantage, télémétrie comportementale</li>
+            <li>Le contenu de vos notes ou vos identifiants GitHub</li>
+        </ul>
+
+        <h2>4. Synchronisation iCloud</h2>
+        <div class="hl"><strong>Uniquement pour la synchronisation du compte.</strong> GitNote utilise l'iCloud fourni par Apple (CloudKit / trousseau iCloud) pour synchroniser vos informations de connexion GitHub entre vos appareils, afin que vous n'ayez pas à vous reconnecter à répétition. Cette synchronisation est entièrement gérée par l'infrastructure d'Apple avec une protection de bout en bout ; le développeur ne peut accéder, lire ni contrôler aucun de ses contenus.</div>
+        <p>Vous pouvez désactiver la synchronisation iCloud à tout moment dans iOS « Réglages — Identifiant Apple — iCloud », ou vous déconnecter dans l'application pour effacer les informations de compte synchronisées.</p>
+
+        <h2>5. À propos de GitHub</h2>
+        <p>GitNote lit et écrit dans votre propre dépôt de notes via l'API officielle de GitHub. Toutes les requêtes sont envoyées directement de votre appareil vers GitHub, sans passer par aucun serveur intermédiaire. Les échanges de données entre vous et GitHub sont régis par la <strong>propre politique de confidentialité de GitHub</strong> ; nous vous recommandons de consulter les conditions de confidentialité de GitHub pour comprendre comment il traite les données. Le développeur n'obtient, ne stocke ni n'analyse votre compte GitHub, vos dépôts ou le contenu de vos notes.</p>
+
+        <h2>6. Réseau et tiers</h2>
+        <ul>
+            <li><strong>Aucun serveur propre</strong> — Le développeur n'exploite aucun backend ni base de données</li>
+            <li><strong>Aucun SDK analytique</strong> — Pas de Firebase, Mixpanel, etc.</li>
+            <li><strong>Aucun SDK publicitaire</strong> — Ne contient aucun framework publicitaire ni traqueur</li>
+            <li><strong>Aucun rapport de plantage</strong> — Aucune donnée envoyée à un service de surveillance</li>
+            <li><strong>Aucune connexion sociale</strong> — Pas d'authentification tierce Facebook, Google, etc.</li>
+            <li><strong>Services tiers limités</strong> — Uniquement GitHub (stockage des notes) et Apple iCloud (synchronisation du compte), tous deux accédés directement par votre appareil</li>
+        </ul>
+
+        <h2>7. Autorisations</h2>
+        <div class="hl"><strong>Autorisations minimales.</strong> GitNote ne demande que les capacités essentielles à ses fonctions principales, telles que l'accès réseau (pour se connecter à GitHub) et iCloud (pour synchroniser les informations du compte). L'application ne demande pas d'autorisations sans rapport avec la prise de notes, comme la localisation, l'appareil photo, le microphone, les contacts ou les photos.</div>
+
+        <h2>8. Conservation et suppression des données</h2>
+        <p>Vos données sont entièrement sous votre contrôle et peuvent être complètement supprimées des manières suivantes :</p>
+        <ul>
+            <li>Se déconnecter dans l'application — Efface les informations du compte GitHub synchronisées localement et dans iCloud</li>
+            <li>Supprimer les fichiers de notes dans votre dépôt GitHub — Retire le contenu de vos notes à la source</li>
+            <li>Supprimer l'application — Retire toutes les données locales de votre appareil</li>
+        </ul>
+        <p>Comme le développeur ne détient aucune copie de vos données, la suppression ne nécessite aucun contact avec nous.</p>
+
+        <h2>9. Sécurité des données</h2>
+        <p>La sécurité de vos notes et des informations de votre compte est assurée conjointement par GitHub, Apple iCloud et le système de votre appareil. La transmission des données utilise un chiffrement conforme aux normes de l'industrie (tel que HTTPS / TLS). Comme le développeur ne stocke aucune donnée, nous ne sommes ni un détenteur ni un point de risque pour vos données.</p>
+
+        <h2>10. Confidentialité des enfants</h2>
+        <p>Cette application n'est pas conçue pour les enfants de moins de 13 ans, et nous ne collectons sciemment aucune information personnelle d'aucun utilisateur (y compris les enfants). L'utilisation de cette application nécessite votre propre compte GitHub et est soumise aux conditions de service correspondantes.</p>
+
+        <h2>11. Modifications de la politique</h2>
+        <p>Si nos pratiques de traitement des données changent, nous mettrons à jour cette politique et indiquerons la nouvelle date d'entrée en vigueur. Compte tenu de l'architecture « zéro collecte de données » de l'application, les modifications futures resteront minimes et transparentes.</p>
+
+        <h2>12. Contact</h2>
+        <p>Pour toute question ou suggestion concernant cette politique de confidentialité, veuillez contacter :</p>
+        <p style="margin-top:8px"><strong>Développeur :</strong> Hongyue<br><strong>E-mail :</strong> 2421155310@qq.com<br><strong>App Store :</strong> GitNote</p>
+
+        <hr class="divider">
+        <p class="footer">&copy; 2026 Hongyue. Tous droits réservés.<br>GitNote — Une application de notes Markdown basée sur GitHub</p>
+    </div>
+
+    <!-- ===================== 한국어 ===================== -->
+    <div class="lang-content" data-lang="ko">
+        <h1>개인정보 처리방침</h1>
+        <p class="subtitle">GitNote — GitHub 기반 Markdown 노트 앱</p>
+        <p class="app-info">시행일: 2026년 10월 28일</p>
+        <hr class="divider">
+
+        <h2>1. 개요</h2>
+        <p>GitNote는 GitHub 기반의 로컬 우선(local-first) Markdown 노트 앱입니다. 귀하의 노트와 데이터는 오직 귀하만의 것입니다. 본 앱은 <strong>어떠한 개인정보도 수집, 업로드 또는 판매하지 않습니다</strong>. 당사는 자체 서버를 운영하지 않으며 백엔드 데이터베이스도 두지 않습니다. 귀하의 노트는 Markdown 파일 형태로 귀하의 GitHub 저장소에 저장되며, 계정 정보는 iCloud를 통해 귀하의 기기 간에 동기화됩니다.</p>
+        <div class="hl"><strong>핵심 원칙:</strong> 데이터 수집 제로, 분석 추적 제로, 광고 제로, 서드파티 SDK 제로. 모든 데이터는 「귀하의 기기 ↔ GitHub ↔ Apple iCloud」 사이를 직접 흐르며, 개발자의 어떠한 서버도 거치지 않습니다.</div>
+
+        <h2>2. 데이터 저장 및 흐름</h2>
+        <p><span class="bg bg-b">로컬 우선</span> 귀하의 데이터는 귀하가 통제하며, 다음 세 곳에 분산되어 있고 모두 개발자가 제어하지 않습니다:</p>
+        <div class="data-item"><span class="data-name">노트 내용</span><div class="data-detail">Markdown 파일 · 귀하의 GitHub 저장소와 기기 로컬에 저장</div></div>
+        <div class="data-item"><span class="data-name">GitHub 계정 정보</span><div class="data-detail">로그인 자격 증명 / 액세스 토큰 · iCloud를 통해 귀하의 여러 기기 간에 동기화</div></div>
+        <div class="data-item"><span class="data-name">앱 설정 및 환경설정</span><div class="data-detail">로컬 저장 · 귀하의 기기에 저장</div></div>
+
+        <h2>3. 수집하지 않는 데이터</h2>
+        <p><span class="bg bg-r">없음</span> 개발자는 다음 어떠한 데이터도 수집하지 않으며 접근할 수도 없습니다:</p>
+        <ul>
+            <li>개인 신원 정보(이름, 이메일, 전화번호, 연령, 성별)</li>
+            <li>기기 식별자(IDFA, IDFV, 광고 식별자)</li>
+            <li>위치 데이터(GPS, IP 기반 위치)</li>
+            <li>연락처, 사진, 카메라, 마이크</li>
+            <li>분석 데이터, 충돌 로그, 행동 원격 분석</li>
+            <li>귀하의 노트 내용 및 GitHub 자격 증명</li>
+        </ul>
+
+        <h2>4. iCloud 동기화</h2>
+        <div class="hl"><strong>계정 정보 동기화에 한해 사용.</strong> GitNote는 Apple이 제공하는 iCloud(CloudKit / iCloud 키체인)를 사용하여 귀하의 여러 기기 간에 GitHub 계정 로그인 정보를 동기화하므로 반복 로그인할 필요가 없습니다. 이 동기화는 전적으로 Apple의 인프라에 의해 처리되고 종단 간 보호되며, 개발자는 그 어떤 내용에도 접근, 읽기 또는 제어할 수 없습니다.</div>
+        <p>귀하는 언제든지 iOS 「설정 — Apple ID — iCloud」에서 iCloud 동기화를 끄거나, 앱 내에서 로그아웃하여 동기화된 계정 정보를 삭제할 수 있습니다.</p>
+
+        <h2>5. GitHub 안내</h2>
+        <p>GitNote는 GitHub 공식 API를 통해 귀하의 노트 저장소를 읽고 씁니다. 모든 요청은 귀하의 기기에서 GitHub로 직접 전송되며 어떠한 중간 서버도 거치지 않습니다. 귀하와 GitHub 간의 데이터 상호작용은 <strong>GitHub 자체의 개인정보 처리방침</strong>의 적용을 받으므로, GitHub의 데이터 처리 방식을 이해하려면 GitHub의 개인정보 조항을 확인하시기 바랍니다. 개발자는 귀하의 GitHub 계정, 저장소 또는 노트 내용을 취득, 저장 또는 분석하지 않습니다.</p>
+
+        <h2>6. 네트워크 및 제3자</h2>
+        <ul>
+            <li><strong>자체 서버 없음</strong> — 개발자는 어떠한 백엔드나 데이터베이스도 운영하지 않음</li>
+            <li><strong>분석 SDK 없음</strong> — Firebase, Mixpanel 등 없음</li>
+            <li><strong>광고 SDK 없음</strong> — 광고 프레임워크나 광고 추적기를 포함하지 않음</li>
+            <li><strong>충돌 보고 없음</strong> — 어떠한 모니터링 서비스에도 데이터를 전송하지 않음</li>
+            <li><strong>소셜 로그인 없음</strong> — Facebook, Google 등 제3자 인증을 포함하지 않음</li>
+            <li><strong>제한된 제3자 서비스</strong> — GitHub(노트 저장)와 Apple iCloud(계정 동기화)만 사용하며, 둘 다 귀하의 기기에서 직접 접근</li>
+        </ul>
+
+        <h2>7. 권한</h2>
+        <div class="hl"><strong>최소 권한.</strong> GitNote는 네트워크 접근(GitHub 연결용)과 iCloud(계정 정보 동기화용) 등 핵심 기능 구현에 필수적인 능력만 요청합니다. 위치, 카메라, 마이크, 연락처, 사진 등 노트 기능과 무관한 권한은 요청하지 않습니다.</div>
+
+        <h2>8. 데이터 보유 및 삭제</h2>
+        <p>귀하의 데이터는 전적으로 귀하가 통제하며, 다음 방법으로 완전히 삭제할 수 있습니다:</p>
+        <ul>
+            <li>앱 내에서 로그아웃 — 로컬 및 iCloud에 동기화된 GitHub 계정 정보 삭제</li>
+            <li>GitHub 저장소의 노트 파일 삭제 — 원본에서 귀하의 노트 내용 제거</li>
+            <li>앱 삭제 — 기기의 모든 로컬 데이터 제거</li>
+        </ul>
+        <p>개발자는 귀하의 데이터 사본을 전혀 보유하지 않으므로, 삭제 시 당사에 연락할 필요가 없습니다.</p>
+
+        <h2>9. 데이터 보안</h2>
+        <p>귀하의 노트와 계정 정보의 보안은 GitHub, Apple iCloud 및 귀하의 기기 시스템이 공동으로 보장합니다. 데이터 전송에는 업계 표준 암호화(HTTPS / TLS 등)를 사용합니다. 개발자는 어떠한 데이터도 저장하지 않으므로, 귀하의 데이터의 보유자나 위험 지점이 되지 않습니다.</p>
+
+        <h2>10. 아동 개인정보</h2>
+        <p>본 앱은 13세 미만 아동을 대상으로 설계되지 않았으며, 당사는 어떠한 사용자(아동 포함)의 개인정보도 고의로 수집하지 않습니다. 본 앱 사용에는 귀하의 GitHub 계정이 필요하며, 해당 서비스 약관의 적용을 받습니다.</p>
+
+        <h2>11. 개인정보 처리방침 변경</h2>
+        <p>데이터 처리 방식에 변경이 있을 경우, 당사는 본 방침을 업데이트하고 새로운 시행일을 명시합니다. 본 앱의 「데이터 수집 제로」 아키텍처를 감안할 때, 향후 변경은 최소화되고 투명하게 유지됩니다.</p>
+
+        <h2>12. 연락처</h2>
+        <p>본 개인정보 처리방침에 관한 질문이나 제안이 있으면 다음으로 연락하시기 바랍니다:</p>
+        <p style="margin-top:8px"><strong>개발자:</strong> Hongyue<br><strong>이메일:</strong> 2421155310@qq.com<br><strong>App Store:</strong> GitNote</p>
+
+        <hr class="divider">
+        <p class="footer">&copy; 2026 Hongyue. All rights reserved.<br>GitNote — GitHub 기반 Markdown 노트 앱</p>
+    </div>
 
 </div>
+
+<script>
+(function () {
+    var SUPPORTED = ['zh', 'en', 'ja', 'fr', 'ko'];
+    var HTML_LANG = { zh: 'zh-CN', en: 'en', ja: 'ja', fr: 'fr', ko: 'ko' };
+    var TITLES = {
+        zh: 'GitNote — 隐私政策',
+        en: 'GitNote — Privacy Policy',
+        ja: 'GitNote — プライバシーポリシー',
+        fr: 'GitNote — Politique de confidentialité',
+        ko: 'GitNote — 개인정보 처리방침'
+    };
+    var buttons = document.querySelectorAll('.lang-switch button');
+    var contents = document.querySelectorAll('.lang-content');
+
+    function apply(lang) {
+        if (SUPPORTED.indexOf(lang) === -1) { lang = 'zh'; }
+        for (var i = 0; i < contents.length; i++) {
+            contents[i].classList.toggle('active', contents[i].getAttribute('data-lang') === lang);
+        }
+        for (var j = 0; j < buttons.length; j++) {
+            var on = buttons[j].getAttribute('data-lang') === lang;
+            buttons[j].classList.toggle('active', on);
+            buttons[j].setAttribute('aria-selected', on ? 'true' : 'false');
+        }
+        document.documentElement.setAttribute('lang', HTML_LANG[lang]);
+        document.title = TITLES[lang];
+        try { localStorage.setItem('gitnote-privacy-lang', lang); } catch (e) {}
+    }
+
+    for (var k = 0; k < buttons.length; k++) {
+        buttons[k].addEventListener('click', function () {
+            apply(this.getAttribute('data-lang'));
+        });
+    }
+
+    // Initial language: saved choice > browser language > Chinese
+    var initial = null;
+    try { initial = localStorage.getItem('gitnote-privacy-lang'); } catch (e) {}
+    if (!initial || SUPPORTED.indexOf(initial) === -1) {
+        var nav = (navigator.language || navigator.userLanguage || 'zh').toLowerCase();
+        initial = 'zh';
+        for (var m = 0; m < SUPPORTED.length; m++) {
+            if (nav.indexOf(SUPPORTED[m]) === 0) { initial = SUPPORTED[m]; break; }
+        }
+    }
+    apply(initial);
+})();
+</script>
 </body>
 </html>
